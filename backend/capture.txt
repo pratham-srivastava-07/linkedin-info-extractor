@@ -1,0 +1,18 @@
+curl --url 'https://www.linkedin.com/feed/' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cache-control: no-cache' \
+  -b 'bcookie="v=2&1b38eb3a-e492-4d83-8e8d-6668730ae4bd"; bscookie="v=1&202408251334563a18c2fb-90b6-40b9-8de8-d8aa9b6dd309AQF85-W5w57ZU3KzERygyjYlc7HoFEoF"; JSESSIONID="ajax:1803825467971006651"; li_sugr=609cc487-a9db-4d7b-b369-7f42c02b6cd1; li_theme=light; li_theme_set=app; timezone=Asia/Calcutta; dfpfpt=d29322a1fb234f98a67d5cead875da3c; nllastdelid=77eb30; bitmovin_analytics_uuid=d761947f-e837-4f11-bada-5a3c45c877e2; _guid=72cdc0a9-7f60-4fd0-8bc3-3495ab7594d2; _uetvid=362dca90f7c411f0a079ed15b736f092; lang=v=2&lang=en-us; AnalyticsSyncHistory=AQKaHn86DRzgfgAAAaBWaEOMVpOu7dVBxiiX39I-rh3sFyt4alUxkcFj5soTerQIx-pbkFj-IwnGvMyvdmK2IQ; lms_ads=AQEGfsut4TScWwAAAaBWaEUlDhqSxp4osZiOsdMHdMaDQNanD4aJPMwfwO_GqP4O2kLNQ8hgUl3eqBWjl4v4PevaZE53n22n; lms_analytics=AQEGfsut4TScWwAAAaBWaEUlDhqSxp4osZiOsdMHdMaDQNanD4aJPMwfwO_GqP4O2kLNQ8hgUl3eqBWjl4v4PevaZE53n22n; fptctx2=AQFLhuAL3F9%252bMrQeINPeJpbGHs9AGlG1djmBRbtYOInwHMrT2VpumumF%252fnm%252bJy%252bK6HsUm1UGCJ8AMAOScip3y3JB5r2COAuhdibnW%252bFJsFYyfYPih%252bwHKjpTxvhzwfs5ADRrSgoV1oLtrVe9v8bhiQ8hPlwf2bzm1%252bXMYcBN5JZBTnDXhvxacGeY2VU6HwFsG0n1IVhq7qADUYeqlAqlN1%252bXYqW8dpE5epdNTqd%252f7gSZo8BH0D8ASBw96jrOBKApP4xAEAc3lcu2Ovru5ptsgUsx9oIIyxzKXDpPSOLGMZruH%252fpJNp12l9L1V8OvNIi92Fg%252f5QGrZ5rW275Y3M6KMP1OTZo1niWwzYgs%252f9pQ5pZDRxeAjqITFJeKn%252fAvtU5nqS0%253d; AMCVS_14215E3D5995C57C0A495C55%40AdobeOrg=1; g_state={"i_l":0}; fid=AQFdst9AakVuMgAAAaBWr8I7B8Aco2e9U9fPKf1t3HE6FHznpMvKt0JLDvl45_Vi3MXn7f6lEfwLmA; liap=true; li_at=AQEDAT97BXcEEt-jAAABoFa7AX0AAAGgeseFfU0ArKp-Q08FxgVONiVH43z6AKUI_b0iF4DyWpUSsyfwPPVKImrOkiLgsOSkVzXPGSzHUCGjcTH-ql7HqckjSiNJm3ncDyDKCh3S_u9TlVy7Ww_QcuqS; sdui_ver=sdui-flagship:0.1.51189+SduiFlagship0; UserMatchHistory=AQKi4TfieClEAAAAAaBWuxpqobfi6omScIAOnbjJcSApyU4E2dMnAmbUBOBZHKJDYiTiq0W9S3XPvClUGYJqltpZX0OpDvyjnmJx0gppQEo5qQWLrfRIT9lpKkLEJ5-Yd91g0dsvhRrtrnXfbkeV6-jZesggeWWagQTED2zrroKu_BkHHBTPqjA3SICE188bWiGdDKl_MEku2JAE4HQpdasE-ssBmDN-5krfVk3i41VXNrzt-S43s0YJwAhgG2K6VVsSVauL-ZVk-PhVywsNOs_-mtfYJ425wf03ixXTS4KtHNO8J_xrWbg4CzStMvOzFAx4w_Bq2UjK4JM9ORPOChiODa307M1zLX3AY6-0njZXovokcQ; lidc="b=VB35:s=V:r=V:a=V:p=V:g=4189:u=1157:x=1:i=1788161501:t=1788243277:v=2:sig=AQEBtdwEJFsx6AqWpMR2PCgQds_1KO0L"; df_ts=1788161601291; li_theme_set=app; AMCV_14215E3D5995C57C0A495C55%40AdobeOrg=-637568504%7CMCIDTS%7C20697%7CMCMID%7C75767014050991520400378824947937512748%7CMCOPTOUT-1788169945s%7CNONE%7CvVersion%7C5.1.1' \
+  -H 'pragma: no-cache' \
+  -H 'priority: u=0, i' \
+  -H 'referer: https://www.linkedin.com/' \
+  -H 'sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Brave";v="152"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: document' \
+  -H 'sec-fetch-mode: navigate' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-user: ?1' \
+  -H 'sec-gpc: 1' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36'

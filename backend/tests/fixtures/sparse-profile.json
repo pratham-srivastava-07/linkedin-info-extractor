@@ -1,0 +1,1087 @@
+{
+  "elements": [
+    {
+      "profileVideoPreview": {
+        "paging": {
+          "count": 10,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.deco.recipe.anonymous.Anon429038699",
+        "elements": []
+      },
+      "profileTreasuryMediaProfile": {
+        "paging": {
+          "total": 2,
+          "count": 10,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+        "elements": []
+      },
+      "objectUrn": "urn:li:member:251749025",
+      "multiLocaleLastName": {
+        "en_US": "Gates"
+      },
+      "multiLocaleFirstNamePronunciationHint": {},
+      "profileOrganizations": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileOrganizationsInjection",
+        "elements": []
+      },
+      "multiLocaleLastNamePronunciationHint": {},
+      "profileEducations": {
+        "paging": {
+          "total": 2,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileEducationsInjection",
+        "elements": [
+          {
+            "dateRange": {
+              "start": {
+                "year": 1973,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "end": {
+                "year": 1975,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "b1f128ff-5987-4b36-8656-4b11b9c72b1b"
+            },
+            "profileTreasuryMediaEducation": {
+              "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+              "elements": []
+            },
+            "companyUrn": "urn:li:fsd_company:1646",
+            "multiLocaleSchoolName": {
+              "en_US": "Harvard University"
+            },
+            "schoolUrn": "urn:li:fsd_school:18483",
+            "entityUrn": "urn:li:fsd_profileEducation:(ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc,157656829)",
+            "school": {
+              "entityUrn": "urn:li:fsd_school:18483",
+              "name": "Harvard University",
+              "active": true,
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImage",
+                  "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0BAQF5t62bcL0e9g",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/C4E0BAQF5t62bcL0e9g/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1631318058235?e=1789603200&v=beta&t=FAVluJm-TJah9PDh5ks_T9TO3NQCi4pZDfyr4gSEJO0",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1631318058235?e=1789603200&v=beta&t=23O68_704DZpMiC87cA8BI-Uji13NLpvmxAHtJ_ZeRo",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1631318058235?e=1789603200&v=beta&t=SE8PWAL-6i7RwVo18fkBahHsorDliETMDsUI5Qg1Fqg",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.organization.MiniSchool",
+              "url": "https://www.linkedin.com/school/harvard-university/"
+            },
+            "company": {
+              "entityUrn": "urn:li:fsd_company:1646",
+              "name": "Harvard University",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImage",
+                  "digitalmediaAsset": "urn:li:digitalmediaAsset:C4E0BAQF5t62bcL0e9g",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/C4E0BAQF5t62bcL0e9g/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1631318058235?e=1789603200&v=beta&t=FAVluJm-TJah9PDh5ks_T9TO3NQCi4pZDfyr4gSEJO0",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1631318058235?e=1789603200&v=beta&t=23O68_704DZpMiC87cA8BI-Uji13NLpvmxAHtJ_ZeRo",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1631318058235?e=1789603200&v=beta&t=SE8PWAL-6i7RwVo18fkBahHsorDliETMDsUI5Qg1Fqg",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.organization.MiniCompany",
+              "url": "https://www.linkedin.com/school/harvard-university/"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileEducation",
+            "schoolName": "Harvard University"
+          },
+          {
+            "entityUrn": "urn:li:fsd_profileEducation:(ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc,157676006)",
+            "school": {
+              "entityUrn": "urn:li:fsd_school:3164077",
+              "name": "Lakeside School",
+              "active": true,
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImage",
+                  "digitalmediaAsset": "urn:li:digitalmediaAsset:D560BAQGFmOQmzpxg9A",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQGFmOQmzpxg9A/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1683732883164/lakeside_school_logo?e=1789603200&v=beta&t=ctjVOoB16rjYD26A52j4NKu5__8yG26jDiTRFaP-P0w",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1683732883164/lakeside_school_logo?e=1789603200&v=beta&t=QGa9RLW0JOz9nQNtgaJ7h_iZl1OQC6_LhMFVic4Uqko",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1683732883164/lakeside_school_logo?e=1789603200&v=beta&t=BhZ4_hlFRbpwmzIE7Q0qWdvTNUz8d_-TbM5-O0D0Kzs",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.organization.MiniSchool",
+              "url": "https://www.linkedin.com/school/lakeside-school/"
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "07c9272a-8cbf-43f3-92cd-42b12f97042d"
+            },
+            "profileTreasuryMediaEducation": {
+              "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+              "elements": []
+            },
+            "company": {
+              "entityUrn": "urn:li:fsd_company:30288",
+              "name": "Lakeside School",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImage",
+                  "digitalmediaAsset": "urn:li:digitalmediaAsset:D560BAQGFmOQmzpxg9A",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQGFmOQmzpxg9A/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1683732883164/lakeside_school_logo?e=1789603200&v=beta&t=ctjVOoB16rjYD26A52j4NKu5__8yG26jDiTRFaP-P0w",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1683732883164/lakeside_school_logo?e=1789603200&v=beta&t=QGa9RLW0JOz9nQNtgaJ7h_iZl1OQC6_LhMFVic4Uqko",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1683732883164/lakeside_school_logo?e=1789603200&v=beta&t=BhZ4_hlFRbpwmzIE7Q0qWdvTNUz8d_-TbM5-O0D0Kzs",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.organization.MiniCompany",
+              "url": "https://www.linkedin.com/school/lakeside-school/"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileEducation",
+            "schoolName": "Lakeside School",
+            "companyUrn": "urn:li:fsd_company:30288",
+            "multiLocaleSchoolName": {
+              "en_US": "Lakeside School"
+            },
+            "schoolUrn": "urn:li:fsd_school:3164077"
+          }
+        ]
+      },
+      "multiLocaleFirstName": {
+        "en_US": "Bill"
+      },
+      "companyNameOnProfileTopCardShown": true,
+      "profilePublications": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePublicationsInjection",
+        "elements": []
+      },
+      "profileCertifications": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileCertificationsInjection",
+        "elements": []
+      },
+      "publicIdentifier": "williamhgates",
+      "trackingId": "Op3BUEWnTtyruqCsbQX+jQ==",
+      "multiLocaleSummary": {
+        "en_US": "Chair of the Gates Foundation. Founder of Breakthrough Energy. Co-founder of Microsoft. Voracious reader. Avid traveler. Active blogger."
+      },
+      "profileVolunteerExperiences": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileVolunteerExperiencesInjection",
+        "elements": []
+      },
+      "versionTag": "219666446",
+      "profilePicture": {
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.ProfilePhotoDecoSpecEditableProfilePicture",
+        "displayImageUrn": "urn:li:digitalmediaAsset:D5603AQF-RYZP55jmXA",
+        "displayImageReference": {
+          "vectorImage": {
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+            "rootUrl": "https://media.licdn.com/dms/image/v2/D5603AQF-RYZP55jmXA/profile-displayphoto-shrink_",
+            "artifacts": [
+              {
+                "width": 200,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "200_200/B56ZRi8g.aGsAY-/0/1736826818802?e=1789603200&v=beta&t=gDAUETt4oCTKGdzOoBPfQmzzNoqSdAA-aGdvmfbAwnw",
+                "expiresAt": 1789603200000,
+                "height": 200
+              },
+              {
+                "width": 400,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "400_400/B56ZRi8g.aGsAg-/0/1736826818802?e=1789603200&v=beta&t=tBe3ps-PenJk32oFcBcqHxr87H8tzYoRg_SwE5LRdSg",
+                "expiresAt": 1789603200000,
+                "height": 400
+              },
+              {
+                "width": 100,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "100_100/B56ZRi8g.aGsAU-/0/1736826818802?e=1789603200&v=beta&t=40Yk2oBoQvlFi_9t0HigEb165DaRLCAuhX3qtrXW6vU",
+                "expiresAt": 1789603200000,
+                "height": 100
+              },
+              {
+                "width": 800,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "800_800/B56ZRi8g.aGsAc-/0/1736826818808?e=1789603200&v=beta&t=GxLFjoH4mCSRCmjFjlSicYo4x_fhdKp4801w4OtVZPI",
+                "expiresAt": 1789603200000,
+                "height": 800
+              }
+            ]
+          }
+        },
+        "photoFilterEditInfo": {
+          "bottomLeft": {
+            "x": 0,
+            "y": 1,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "vignette": 0,
+          "bottomRight": {
+            "x": 1,
+            "y": 1,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "topRight": {
+            "x": 1,
+            "y": 0,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "saturation": 0,
+          "brightness": 0,
+          "photoFilterType": "ORIGINAL",
+          "contrast": 0,
+          "topLeft": {
+            "x": 0,
+            "y": 0,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "$recipeType": "com.linkedin.deco.recipe.anonymous.Anon1309211116"
+        }
+      },
+      "firstName": "Bill",
+      "profileSkills": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkillsInjection",
+        "elements": []
+      },
+      "profileProjects": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileProjectsInjection",
+        "elements": []
+      },
+      "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileWithEntities",
+      "multiLocaleHeadline": {
+        "en_US": "Chair, Gates Foundation and Founder, Breakthrough Energy"
+      },
+      "profileHonors": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileHonorsInjection",
+        "elements": []
+      },
+      "memorialized": false,
+      "lastName": "Gates",
+      "profilePatents": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePatentsInjection",
+        "elements": []
+      },
+      "showPremiumSubscriberBadge": true,
+      "industry": {
+        "name": "Philanthropy",
+        "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+        "entityUrn": "urn:li:fsd_industry:131"
+      },
+      "geoLocationBackfilled": false,
+      "multiLocaleFullNamePronunciationAudio": {},
+      "profileTestScores": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTestScoresInjection",
+        "elements": []
+      },
+      "premium": true,
+      "influencer": true,
+      "entityUrn": "urn:li:fsd_profile:ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc",
+      "profileLanguages": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileLanguagesInjection",
+        "elements": []
+      },
+      "headline": "Chair, Gates Foundation and Founder, Breakthrough Energy",
+      "summary": "Chair of the Gates Foundation. Founder of Breakthrough Energy. Co-founder of Microsoft. Voracious reader. Avid traveler. Active blogger.",
+      "creator": true,
+      "profileCourses": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileCoursesInjection",
+        "elements": []
+      },
+      "supportedLocales": [
+        {
+          "country": "US",
+          "language": "en",
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.Locale"
+        }
+      ],
+      "educationOnProfileTopCardShown": false,
+      "industryUrn": "urn:li:fsd_industry:131",
+      "profilePositionGroups": {
+        "paging": {
+          "total": 3,
+          "count": 10,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroupsInjection",
+        "elements": [
+          {
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc,f0723c2e436a6bda4ab6fb5a97d650cfe30b9990)",
+            "dateRange": {
+              "start": {
+                "year": 2000,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+              "en_US": "Gates Foundation"
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "15ad9835-3146-4cc9-a0f2-5adffd7c084e"
+            },
+            "companyName": "Gates Foundation",
+            "profilePositionInPositionGroup": {
+              "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup",
+              "elements": [
+                {
+                  "shouldShowSourceOfHireBadge": false,
+                  "multiLocaleTitle": {
+                    "en_US": "Co-chair"
+                  },
+                  "dateRange": {
+                    "start": {
+                      "year": 2000,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+                  },
+                  "multiLocaleCompanyName": {
+                    "en_US": "Gates Foundation"
+                  },
+                  "$anti_abuse_metadata": {
+                    "$anti_abuse_uuid": "a23c231d-f2c0-4eef-bd22-66555441531d"
+                  },
+                  "companyName": "Gates Foundation",
+                  "title": "Co-chair",
+                  "companyUrn": "urn:li:fsd_company:8736",
+                  "profileTreasuryMediaPosition": {
+                    "paging": {
+                      "total": 0,
+                      "count": 10,
+                      "start": 0,
+                      "links": [],
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+                    "elements": []
+                  },
+                  "entityUrn": "urn:li:fsd_profilePosition:(ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc,392598211)",
+                  "company": {
+                    "industry": {
+                      "urn:li:fsd_industry:100": {
+                        "name": "Non-profit Organization Management",
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                        "entityUrn": "urn:li:fsd_industry:100"
+                      }
+                    },
+                    "industryUrns": [
+                      "urn:li:fsd_industry:100"
+                    ],
+                    "url": "https://www.linkedin.com/company/gates-foundation/",
+                    "employeeCountRange": {
+                      "start": 1001,
+                      "end": 5000,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                    },
+                    "entityUrn": "urn:li:fsd_company:8736",
+                    "name": "Gates Foundation",
+                    "logo": {
+                      "vectorImage": {
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                        "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQEgMqqFTd40Tg/company-logo_",
+                        "artifacts": [
+                          {
+                            "width": 200,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1736784969376/bill__melinda_gates_foundation_logo?e=1789603200&v=beta&t=JuwlyUpV8O6IdsE7KN2roTru8jwdv7T5fTEiFoVClX8",
+                            "expiresAt": 1789603200000,
+                            "height": 200
+                          },
+                          {
+                            "width": 100,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1736784969376/bill__melinda_gates_foundation_logo?e=1789603200&v=beta&t=aRLHx3RowwbZwvD5mMyNrlIcNBcT43pBy0HGl3P-Hvg",
+                            "expiresAt": 1789603200000,
+                            "height": 100
+                          },
+                          {
+                            "width": 400,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1736784969376/bill__melinda_gates_foundation_logo?e=1789603200&v=beta&t=njmrIsThlq9SHjcKSP-UW2Wp6CTCcXIDePfAuuJksSE",
+                            "expiresAt": 1789603200000,
+                            "height": 400
+                          }
+                        ]
+                      }
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+                    "universalName": "gates-foundation"
+                  },
+                  "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+                }
+              ]
+            },
+            "company": {
+              "industry": {
+                "urn:li:fsd_industry:100": {
+                  "name": "Non-profit Organization Management",
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                  "entityUrn": "urn:li:fsd_industry:100"
+                }
+              },
+              "industryUrns": [
+                "urn:li:fsd_industry:100"
+              ],
+              "url": "https://www.linkedin.com/company/gates-foundation/",
+              "employeeCountRange": {
+                "start": 1001,
+                "end": 5000,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+              },
+              "entityUrn": "urn:li:fsd_company:8736",
+              "name": "Gates Foundation",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQEgMqqFTd40Tg/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1736784969376/bill__melinda_gates_foundation_logo?e=1789603200&v=beta&t=JuwlyUpV8O6IdsE7KN2roTru8jwdv7T5fTEiFoVClX8",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1736784969376/bill__melinda_gates_foundation_logo?e=1789603200&v=beta&t=aRLHx3RowwbZwvD5mMyNrlIcNBcT43pBy0HGl3P-Hvg",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1736784969376/bill__melinda_gates_foundation_logo?e=1789603200&v=beta&t=njmrIsThlq9SHjcKSP-UW2Wp6CTCcXIDePfAuuJksSE",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+              "universalName": "gates-foundation"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup",
+            "companyUrn": "urn:li:fsd_company:8736"
+          },
+          {
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc,e259382720cb8b581205a34c2c592d712a9091fd)",
+            "dateRange": {
+              "start": {
+                "year": 2015,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+              "en_US": "Breakthrough Energy "
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "da0673c6-29b3-4934-b7d8-32b8133dcda4"
+            },
+            "companyName": "Breakthrough Energy ",
+            "profilePositionInPositionGroup": {
+              "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup",
+              "elements": [
+                {
+                  "shouldShowSourceOfHireBadge": false,
+                  "multiLocaleTitle": {
+                    "en_US": "Founder"
+                  },
+                  "dateRange": {
+                    "start": {
+                      "year": 2015,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+                  },
+                  "multiLocaleCompanyName": {
+                    "en_US": "Breakthrough Energy "
+                  },
+                  "$anti_abuse_metadata": {
+                    "$anti_abuse_uuid": "5cc6ec5a-9954-48dd-83d7-5bf27551808a"
+                  },
+                  "companyName": "Breakthrough Energy ",
+                  "title": "Founder",
+                  "companyUrn": "urn:li:fsd_company:19141006",
+                  "profileTreasuryMediaPosition": {
+                    "paging": {
+                      "total": 0,
+                      "count": 10,
+                      "start": 0,
+                      "links": [],
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+                    "elements": []
+                  },
+                  "entityUrn": "urn:li:fsd_profilePosition:(ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc,1836104012)",
+                  "company": {
+                    "industry": {
+                      "urn:li:fsd_industry:11": {
+                        "name": "Management Consulting",
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                        "entityUrn": "urn:li:fsd_industry:11"
+                      }
+                    },
+                    "industryUrns": [
+                      "urn:li:fsd_industry:11"
+                    ],
+                    "url": "https://www.linkedin.com/company/breakthrough-energy/",
+                    "employeeCountRange": {
+                      "start": 51,
+                      "end": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                    },
+                    "entityUrn": "urn:li:fsd_company:19141006",
+                    "name": "Breakthrough Energy",
+                    "logo": {
+                      "vectorImage": {
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                        "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQFRMYiQN7-2kA/company-logo_",
+                        "artifacts": [
+                          {
+                            "width": 400,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "400_400/B56ZoI4SGPI0AY-/0/1761085563539/breakthrough_energy_logo?e=1789603200&v=beta&t=J1pw3Ehh0eD3uFwY981iDMmgx_BlCSzGxRSa-v0Mvtw",
+                            "expiresAt": 1789603200000,
+                            "height": 400
+                          },
+                          {
+                            "width": 200,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "200_200/B56ZoI4SGPI0AI-/0/1761085563539/breakthrough_energy_logo?e=1789603200&v=beta&t=NU9knrZVk1MlWdrkBXyy7C-J9hYqnPJp_9yweVCe9mo",
+                            "expiresAt": 1789603200000,
+                            "height": 200
+                          },
+                          {
+                            "width": 100,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "100_100/B56ZoI4SGPI0AQ-/0/1761085563539/breakthrough_energy_logo?e=1789603200&v=beta&t=j12KY_CkN0-2K_Xym3SFUsuA0NEqp6WOUJKuAcoVC8c",
+                            "expiresAt": 1789603200000,
+                            "height": 100
+                          }
+                        ]
+                      }
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+                    "universalName": "breakthrough-energy"
+                  },
+                  "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+                }
+              ]
+            },
+            "company": {
+              "industry": {
+                "urn:li:fsd_industry:11": {
+                  "name": "Management Consulting",
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                  "entityUrn": "urn:li:fsd_industry:11"
+                }
+              },
+              "industryUrns": [
+                "urn:li:fsd_industry:11"
+              ],
+              "url": "https://www.linkedin.com/company/breakthrough-energy/",
+              "employeeCountRange": {
+                "start": 51,
+                "end": 200,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+              },
+              "entityUrn": "urn:li:fsd_company:19141006",
+              "name": "Breakthrough Energy",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQFRMYiQN7-2kA/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/B56ZoI4SGPI0AY-/0/1761085563539/breakthrough_energy_logo?e=1789603200&v=beta&t=J1pw3Ehh0eD3uFwY981iDMmgx_BlCSzGxRSa-v0Mvtw",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    },
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/B56ZoI4SGPI0AI-/0/1761085563539/breakthrough_energy_logo?e=1789603200&v=beta&t=NU9knrZVk1MlWdrkBXyy7C-J9hYqnPJp_9yweVCe9mo",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/B56ZoI4SGPI0AQ-/0/1761085563539/breakthrough_energy_logo?e=1789603200&v=beta&t=j12KY_CkN0-2K_Xym3SFUsuA0NEqp6WOUJKuAcoVC8c",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+              "universalName": "breakthrough-energy"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup",
+            "companyUrn": "urn:li:fsd_company:19141006"
+          },
+          {
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc,379b0fee813e578bb10050b852dc16ba755ef821)",
+            "dateRange": {
+              "start": {
+                "year": 1975,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+              "en_US": "Microsoft"
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "b35e2ad0-9fc2-4bf0-93cf-f7f2ad231eb4"
+            },
+            "companyName": "Microsoft",
+            "profilePositionInPositionGroup": {
+              "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup",
+              "elements": [
+                {
+                  "shouldShowSourceOfHireBadge": false,
+                  "multiLocaleTitle": {
+                    "en_US": "Co-founder"
+                  },
+                  "dateRange": {
+                    "start": {
+                      "year": 1975,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+                  },
+                  "multiLocaleCompanyName": {
+                    "en_US": "Microsoft"
+                  },
+                  "$anti_abuse_metadata": {
+                    "$anti_abuse_uuid": "d68126c5-1e12-43c0-8fc1-853cb95f85e4"
+                  },
+                  "companyName": "Microsoft",
+                  "title": "Co-founder",
+                  "companyUrn": "urn:li:fsd_company:1035",
+                  "profileTreasuryMediaPosition": {
+                    "paging": {
+                      "total": 0,
+                      "count": 10,
+                      "start": 0,
+                      "links": [],
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+                    "elements": []
+                  },
+                  "entityUrn": "urn:li:fsd_profilePosition:(ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc,392599749)",
+                  "company": {
+                    "industry": {
+                      "urn:li:fsd_industry:4": {
+                        "name": "Computer Software",
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                        "entityUrn": "urn:li:fsd_industry:4"
+                      }
+                    },
+                    "industryUrns": [
+                      "urn:li:fsd_industry:4"
+                    ],
+                    "url": "https://www.linkedin.com/company/microsoft/",
+                    "employeeCountRange": {
+                      "start": 10001,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                    },
+                    "entityUrn": "urn:li:fsd_company:1035",
+                    "name": "Microsoft",
+                    "logo": {
+                      "vectorImage": {
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                        "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_",
+                        "artifacts": [
+                          {
+                            "width": 100,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "100_100/B56ZYQ0mrGGoAU-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=PZsResnhobUBxhtTu8jfRK-eI1SS-UTKYHpRf-gq4M4",
+                            "expiresAt": 1789603200000,
+                            "height": 100
+                          },
+                          {
+                            "width": 200,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "200_200/B56ZYQ0mrGGoAM-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=UNPbhAGEteFWT-PsrUJGmnRqLlr76jTukAvnP_SzITA",
+                            "expiresAt": 1789603200000,
+                            "height": 200
+                          },
+                          {
+                            "width": 400,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "400_400/B56ZYQ0mrGGoAc-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=VLtcj1EBOJV2LA4_rVYP9zGho3r23V0MTXGH5p2Z7gw",
+                            "expiresAt": 1789603200000,
+                            "height": 400
+                          }
+                        ]
+                      }
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+                    "universalName": "microsoft"
+                  },
+                  "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+                }
+              ]
+            },
+            "company": {
+              "industry": {
+                "urn:li:fsd_industry:4": {
+                  "name": "Computer Software",
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                  "entityUrn": "urn:li:fsd_industry:4"
+                }
+              },
+              "industryUrns": [
+                "urn:li:fsd_industry:4"
+              ],
+              "url": "https://www.linkedin.com/company/microsoft/",
+              "employeeCountRange": {
+                "start": 10001,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+              },
+              "entityUrn": "urn:li:fsd_company:1035",
+              "name": "Microsoft",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/B56ZYQ0mrGGoAU-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=PZsResnhobUBxhtTu8jfRK-eI1SS-UTKYHpRf-gq4M4",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/B56ZYQ0mrGGoAM-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=UNPbhAGEteFWT-PsrUJGmnRqLlr76jTukAvnP_SzITA",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/B56ZYQ0mrGGoAc-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=VLtcj1EBOJV2LA4_rVYP9zGho3r23V0MTXGH5p2Z7gw",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+              "universalName": "microsoft"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup",
+            "companyUrn": "urn:li:fsd_company:1035"
+          }
+        ]
+      },
+      "geoLocation": {
+        "geo": {
+          "countryUrn": "urn:li:fsd_geo:103644278",
+          "country": {
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.CountryGeo",
+            "entityUrn": "urn:li:fsd_geo:103644278",
+            "defaultLocalizedName": "United States"
+          },
+          "defaultLocalizedNameWithoutCountryName": "Seattle, Washington",
+          "entityUrn": "urn:li:fsd_geo:104116203",
+          "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.Geo",
+          "defaultLocalizedName": "Seattle, Washington, United States"
+        },
+        "geoUrn": "urn:li:fsd_geo:104116203",
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.ProfileGeoLocation"
+      },
+      "profileRingStatusCollection": {
+        "paging": {
+          "count": 10,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.deco.recipe.anonymous.Anon1936086081",
+        "elements": []
+      },
+      "location": {
+        "countryCode": "US",
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.ProfileLocation"
+      },
+      "backgroundPicture": {
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.ProfilePhotoDecoSpecEditableBackgroundPicture",
+        "displayImageUrn": "urn:li:digitalmediaAsset:D5616AQEjhPbTCeblYg",
+        "displayImageReference": {
+          "vectorImage": {
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+            "rootUrl": "https://media.licdn.com/dms/image/v2/D5616AQEjhPbTCeblYg/profile-displaybackgroundimage-shrink_",
+            "artifacts": [
+              {
+                "width": 1400,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "350_1400/B56ZcytR5SGsAg-/0/1748902420393?e=1789603200&v=beta&t=l5pS6rYe3TohSB2mDEyzqYCSIorJne8Nuea3PIeuKyU",
+                "expiresAt": 1789603200000,
+                "height": 350
+              },
+              {
+                "width": 800,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "200_800/B56ZcytR5SGsAc-/0/1748902420393?e=1789603200&v=beta&t=9HKU9mOVeqJBZweK2VIESK5suNDwEagM_0jBfAN6Wu4",
+                "expiresAt": 1789603200000,
+                "height": 200
+              }
+            ]
+          }
+        },
+        "photoFilterEditInfo": {
+          "bottomLeft": {
+            "x": 0,
+            "y": 1,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "vignette": 0,
+          "bottomRight": {
+            "x": 1,
+            "y": 1,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "topRight": {
+            "x": 1,
+            "y": 0,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "saturation": 0,
+          "brightness": 0,
+          "photoFilterType": "ORIGINAL",
+          "contrast": 0,
+          "topLeft": {
+            "x": 0,
+            "y": 0,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "$recipeType": "com.linkedin.deco.recipe.anonymous.Anon1309211116"
+        }
+      },
+      "primaryLocale": {
+        "country": "US",
+        "language": "en",
+        "$recipeType": "com.linkedin.voyager.dash.deco.common.Locale"
+      }
+    }
+  ],
+  "paging": {
+    "count": 10,
+    "start": 0,
+    "links": []
+  }
+}

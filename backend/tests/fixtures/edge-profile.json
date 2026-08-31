@@ -1,0 +1,1567 @@
+{
+  "elements": [
+    {
+      "profileVideoPreview": {
+        "paging": {
+          "count": 10,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.deco.recipe.anonymous.Anon429038699",
+        "elements": []
+      },
+      "profileTreasuryMediaProfile": {
+        "paging": {
+          "total": 24,
+          "count": 10,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+        "elements": []
+      },
+      "objectUrn": "urn:li:member:19186432",
+      "multiLocaleLastName": {
+        "en_US": "Nadella"
+      },
+      "multiLocaleFirstNamePronunciationHint": {},
+      "profileOrganizations": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileOrganizationsInjection",
+        "elements": []
+      },
+      "multiLocaleLastNamePronunciationHint": {},
+      "profileEducations": {
+        "paging": {
+          "total": 3,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileEducationsInjection",
+        "elements": [
+          {
+            "entityUrn": "urn:li:fsd_profileEducation:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,15604407)",
+            "school": {
+              "entityUrn": "urn:li:fsd_school:18315",
+              "name": "The University of Chicago Booth School of Business",
+              "active": true,
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImage",
+                  "digitalmediaAsset": "urn:li:digitalmediaAsset:D560BAQFZO05jhYKSkw",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQFZO05jhYKSkw/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1692627816910/universityofchicagoboothschoolofbusiness_logo?e=1789603200&v=beta&t=9vIMcr38GKhCdkwLpXUYM58MoOFSLv6Odg0lqJj6-VY",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1692627816910/universityofchicagoboothschoolofbusiness_logo?e=1789603200&v=beta&t=iK3lyB2rwyogxGKo3_wol4mn8VoTUN_ftAlH6AKrCFY",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1692627816910/universityofchicagoboothschoolofbusiness_logo?e=1789603200&v=beta&t=moGDLvp9JrpEvSqpUPjRajuHxgmTlRayu0ZIY7UVTSM",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.organization.MiniSchool",
+              "url": "https://www.linkedin.com/school/universityofchicagoboothschoolofbusiness/"
+            },
+            "dateRange": {
+              "start": {
+                "year": 1994,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "end": {
+                "year": 1996,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "ee938547-a9e5-42fe-9edb-7b94abb52ac7"
+            },
+            "profileTreasuryMediaEducation": {
+              "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+              "elements": []
+            },
+            "company": {
+              "entityUrn": "urn:li:fsd_company:8398",
+              "name": "The University of Chicago Booth School of Business",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImage",
+                  "digitalmediaAsset": "urn:li:digitalmediaAsset:D560BAQFZO05jhYKSkw",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQFZO05jhYKSkw/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1692627816910/universityofchicagoboothschoolofbusiness_logo?e=1789603200&v=beta&t=9vIMcr38GKhCdkwLpXUYM58MoOFSLv6Odg0lqJj6-VY",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1692627816910/universityofchicagoboothschoolofbusiness_logo?e=1789603200&v=beta&t=iK3lyB2rwyogxGKo3_wol4mn8VoTUN_ftAlH6AKrCFY",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1692627816910/universityofchicagoboothschoolofbusiness_logo?e=1789603200&v=beta&t=moGDLvp9JrpEvSqpUPjRajuHxgmTlRayu0ZIY7UVTSM",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.organization.MiniCompany",
+              "url": "https://www.linkedin.com/school/universityofchicagoboothschoolofbusiness/"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileEducation",
+            "companyUrn": "urn:li:fsd_company:8398",
+            "schoolUrn": "urn:li:fsd_school:18315"
+          },
+          {
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "ab2edf2d-1f1d-4906-841e-63662d7dc7a4"
+            },
+            "profileTreasuryMediaEducation": {
+              "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+              "elements": []
+            },
+            "degreeName": "Bachelor’s Degree",
+            "companyUrn": "urn:li:fsd_company:577550",
+            "multiLocaleSchoolName": {
+              "en_US": "Manipal Institute of Technology, Manipal"
+            },
+            "schoolUrn": "urn:li:fsd_school:21103",
+            "entityUrn": "urn:li:fsd_profileEducation:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,287943982)",
+            "school": {
+              "entityUrn": "urn:li:fsd_school:21103",
+              "name": "Manipal Institute of Technology",
+              "active": true,
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImage",
+                  "digitalmediaAsset": "urn:li:digitalmediaAsset:D4D0BAQHodG_7cUqs6w",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D4D0BAQHodG_7cUqs6w/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/B4DZ8hC8AUJQAU-/0/1782965846315/manipal_institute_of_technology_logo?e=1789603200&v=beta&t=w56fRJggWPUB8Bk58sw-Ib9T_18Qk8_tK-AC3J3Pfws",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    },
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/B4DZ8hC8AUJQAE-/0/1782965846314/manipal_institute_of_technology_logo?e=1789603200&v=beta&t=-VL5i6bqnT3Sk5cH3yXCzPWaC8AsO9kyziDXGzOZBQU",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/B4DZ8hC8AUJQAI-/0/1782965846315/manipal_institute_of_technology_logo?e=1789603200&v=beta&t=pHl7sNTZ9WV1GBr_j3zZ3dT2Z97EcoBBEN7u8dw_4L4",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.organization.MiniSchool",
+              "url": "https://www.linkedin.com/school/manipal-institute-of-technology/"
+            },
+            "company": {
+              "entityUrn": "urn:li:fsd_company:577550",
+              "name": "Manipal Institute of Technology",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImage",
+                  "digitalmediaAsset": "urn:li:digitalmediaAsset:D4D0BAQHodG_7cUqs6w",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D4D0BAQHodG_7cUqs6w/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/B4DZ8hC8AUJQAU-/0/1782965846315/manipal_institute_of_technology_logo?e=1789603200&v=beta&t=w56fRJggWPUB8Bk58sw-Ib9T_18Qk8_tK-AC3J3Pfws",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    },
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/B4DZ8hC8AUJQAE-/0/1782965846314/manipal_institute_of_technology_logo?e=1789603200&v=beta&t=-VL5i6bqnT3Sk5cH3yXCzPWaC8AsO9kyziDXGzOZBQU",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/B4DZ8hC8AUJQAI-/0/1782965846315/manipal_institute_of_technology_logo?e=1789603200&v=beta&t=pHl7sNTZ9WV1GBr_j3zZ3dT2Z97EcoBBEN7u8dw_4L4",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.organization.MiniCompany",
+              "url": "https://www.linkedin.com/school/manipal-institute-of-technology/"
+            },
+            "multiLocaleFieldOfStudy": {
+              "en_US": "Electrical Engineering"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileEducation",
+            "schoolName": "Manipal Institute of Technology, Manipal",
+            "fieldOfStudy": "Electrical Engineering",
+            "multiLocaleDegreeName": {
+              "en_US": "Bachelor’s Degree"
+            }
+          },
+          {
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "01d1caed-73c0-4c82-a9c8-ab92dafd1f4f"
+            },
+            "profileTreasuryMediaEducation": {
+              "paging": {
+                "total": 0,
+                "count": 10,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+              "elements": []
+            },
+            "degreeName": "Master’s Degree",
+            "companyUrn": "urn:li:fsd_company:166690",
+            "multiLocaleSchoolName": {
+              "en_US": "University of Wisconsin-Milwaukee"
+            },
+            "schoolUrn": "urn:li:fsd_school:19691",
+            "entityUrn": "urn:li:fsd_profileEducation:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,287944974)",
+            "school": {
+              "entityUrn": "urn:li:fsd_school:19691",
+              "name": "University of Wisconsin-Milwaukee",
+              "active": true,
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImage",
+                  "digitalmediaAsset": "urn:li:digitalmediaAsset:D4D0BAQE47QlO_LG8SQ",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D4D0BAQE47QlO_LG8SQ/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1729615751602/uwmilwaukee_logo?e=1789603200&v=beta&t=j7XOXc_fmhNSttGjeDGhvvWBUZZ6Wlq9WuPnHh5woos",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1729615751602/uwmilwaukee_logo?e=1789603200&v=beta&t=g90jPekBuKk3NnoMq829WP1ElcEMFGJx0bWqVn50eB4",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1729615751602/uwmilwaukee_logo?e=1789603200&v=beta&t=5VOJ0G4iJomXLv6x2Um2DMC96yltUoWeAE_aY8xnD8k",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.organization.MiniSchool",
+              "url": "https://www.linkedin.com/school/uwmilwaukee/"
+            },
+            "company": {
+              "entityUrn": "urn:li:fsd_company:166690",
+              "name": "University of Wisconsin-Milwaukee",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImage",
+                  "digitalmediaAsset": "urn:li:digitalmediaAsset:D4D0BAQE47QlO_LG8SQ",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D4D0BAQE47QlO_LG8SQ/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1729615751602/uwmilwaukee_logo?e=1789603200&v=beta&t=j7XOXc_fmhNSttGjeDGhvvWBUZZ6Wlq9WuPnHh5woos",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1729615751602/uwmilwaukee_logo?e=1789603200&v=beta&t=g90jPekBuKk3NnoMq829WP1ElcEMFGJx0bWqVn50eB4",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1729615751602/uwmilwaukee_logo?e=1789603200&v=beta&t=5VOJ0G4iJomXLv6x2Um2DMC96yltUoWeAE_aY8xnD8k",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.organization.MiniCompany",
+              "url": "https://www.linkedin.com/school/uwmilwaukee/"
+            },
+            "multiLocaleFieldOfStudy": {
+              "en_US": "Computer Science"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileEducation",
+            "schoolName": "University of Wisconsin-Milwaukee",
+            "fieldOfStudy": "Computer Science",
+            "multiLocaleDegreeName": {
+              "en_US": "Master’s Degree"
+            }
+          }
+        ]
+      },
+      "multiLocaleFirstName": {
+        "en_US": "Satya"
+      },
+      "companyNameOnProfileTopCardShown": true,
+      "profilePublications": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePublicationsInjection",
+        "elements": []
+      },
+      "profileCertifications": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileCertificationsInjection",
+        "elements": []
+      },
+      "publicIdentifier": "satyanadella",
+      "trackingId": "u1/r3z80RCOvaLGEu+3BeQ==",
+      "multiLocaleSummary": {
+        "en_US": "As chairman and CEO of Microsoft, I define my mission and that of my company as empowering every person and every organization on the planet to achieve more."
+      },
+      "profileVolunteerExperiences": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileVolunteerExperiencesInjection",
+        "elements": []
+      },
+      "versionTag": "3006684280",
+      "profilePicture": {
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.ProfilePhotoDecoSpecEditableProfilePicture",
+        "displayImageUrn": "urn:li:digitalmediaAsset:C5603AQHHUuOSlRVA1w",
+        "displayImageReference": {
+          "vectorImage": {
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+            "rootUrl": "https://media.licdn.com/dms/image/v2/C5603AQHHUuOSlRVA1w/profile-displayphoto-shrink_",
+            "artifacts": [
+              {
+                "width": 100,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "100_100/profile-displayphoto-shrink_100_100/0/1579726625423?e=1789603200&v=beta&t=l1C2pT7HyJdL1IoToknmpZIjbqmyY-_rPBh188qq41s",
+                "expiresAt": 1789603200000,
+                "height": 100
+              },
+              {
+                "width": 200,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "200_200/profile-displayphoto-shrink_200_200/0/1579726625398?e=1789603200&v=beta&t=o5LjYdCas4nqd3zXf0ned4ac1PqZ_rSntXYGGX2S4vU",
+                "expiresAt": 1789603200000,
+                "height": 200
+              },
+              {
+                "width": 400,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "400_400/profile-displayphoto-shrink_400_400/0/1579726625448?e=1789603200&v=beta&t=_VkYwDuGaMNOBBYSyoqvatw5cVXjjsd_ec56WvDYtj0",
+                "expiresAt": 1789603200000,
+                "height": 400
+              },
+              {
+                "width": 800,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "800_800/profile-displayphoto-shrink_800_800/0/1579726625483?e=1789603200&v=beta&t=Xn0cEGG4O1qjWhGIEGiXe0fbm-U7kaCKHQqCnnmH9Os",
+                "expiresAt": 1789603200000,
+                "height": 800
+              }
+            ]
+          }
+        },
+        "photoFilterEditInfo": {
+          "bottomLeft": {
+            "x": 0.0009319955406911659,
+            "y": 0.4451970053242247,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "vignette": 0,
+          "bottomRight": {
+            "x": 0.6675986622073579,
+            "y": 0.4451970053242247,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "topRight": {
+            "x": 0.6675986622073579,
+            "y": 0.000717773431091837,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "saturation": 0,
+          "brightness": 0,
+          "photoFilterType": "ORIGINAL",
+          "contrast": 0,
+          "topLeft": {
+            "x": 0.0009319955406911659,
+            "y": 0.000717773431091837,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "$recipeType": "com.linkedin.deco.recipe.anonymous.Anon1309211116"
+        }
+      },
+      "firstName": "Satya",
+      "profileSkills": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkillsInjection",
+        "elements": []
+      },
+      "profileProjects": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileProjectsInjection",
+        "elements": []
+      },
+      "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileWithEntities",
+      "multiLocaleHeadline": {
+        "en_US": "Chairman and CEO at Microsoft"
+      },
+      "profileHonors": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileHonorsInjection",
+        "elements": []
+      },
+      "memorialized": false,
+      "lastName": "Nadella",
+      "profilePatents": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePatentsInjection",
+        "elements": []
+      },
+      "showPremiumSubscriberBadge": true,
+      "industry": {
+        "name": "Computer Software",
+        "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+        "entityUrn": "urn:li:fsd_industry:4"
+      },
+      "geoLocationBackfilled": false,
+      "multiLocaleFullNamePronunciationAudio": {},
+      "profileTestScores": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTestScoresInjection",
+        "elements": []
+      },
+      "premium": true,
+      "influencer": true,
+      "entityUrn": "urn:li:fsd_profile:ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ",
+      "profileLanguages": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileLanguagesInjection",
+        "elements": []
+      },
+      "headline": "Chairman and CEO at Microsoft",
+      "summary": "As chairman and CEO of Microsoft, I define my mission and that of my company as empowering every person and every organization on the planet to achieve more.",
+      "creator": true,
+      "profileCourses": {
+        "paging": {
+          "total": 0,
+          "count": 20,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileCoursesInjection",
+        "elements": []
+      },
+      "supportedLocales": [
+        {
+          "country": "US",
+          "language": "en",
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.Locale"
+        }
+      ],
+      "educationOnProfileTopCardShown": true,
+      "industryUrn": "urn:li:fsd_industry:4",
+      "profilePositionGroups": {
+        "paging": {
+          "total": 5,
+          "count": 10,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroupsInjection",
+        "elements": [
+          {
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,adff2ad091ba95fbad124fa88628733cd2bf7c30)",
+            "dateRange": {
+              "start": {
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date",
+                "month": 2,
+                "year": 2014
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+              "en_US": "Microsoft"
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "d0f40960-4239-4c56-9635-9522a9b19270"
+            },
+            "companyName": "Microsoft",
+            "profilePositionInPositionGroup": {
+              "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup",
+              "elements": [
+                {
+                  "dateRange": {
+                    "start": {
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date",
+                      "month": 2,
+                      "year": 2014
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+                  },
+                  "multiLocaleCompanyName": {
+                    "en_US": "Microsoft"
+                  },
+                  "$anti_abuse_metadata": {
+                    "$anti_abuse_uuid": "6a1dbd09-0725-4aff-a027-ef71ea798117"
+                  },
+                  "companyName": "Microsoft",
+                  "title": "Chairman and CEO",
+                  "companyUrn": "urn:li:fsd_company:1035",
+                  "geo": {
+                    "entityUrn": "urn:li:fsd_geo:90000091",
+                    "$recipeType": "com.linkedin.deco.recipe.anonymous.Anon1271139837"
+                  },
+                  "entityUrn": "urn:li:fsd_profilePosition:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,505656746)",
+                  "multiLocaleGeoLocationName": {
+                    "en_US": "Greater Seattle Area"
+                  },
+                  "company": {
+                    "industry": {
+                      "urn:li:fsd_industry:4": {
+                        "name": "Computer Software",
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                        "entityUrn": "urn:li:fsd_industry:4"
+                      }
+                    },
+                    "industryUrns": [
+                      "urn:li:fsd_industry:4"
+                    ],
+                    "url": "https://www.linkedin.com/company/microsoft/",
+                    "employeeCountRange": {
+                      "start": 10001,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                    },
+                    "entityUrn": "urn:li:fsd_company:1035",
+                    "name": "Microsoft",
+                    "logo": {
+                      "vectorImage": {
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                        "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_",
+                        "artifacts": [
+                          {
+                            "width": 100,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "100_100/B56ZYQ0mrGGoAU-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=PZsResnhobUBxhtTu8jfRK-eI1SS-UTKYHpRf-gq4M4",
+                            "expiresAt": 1789603200000,
+                            "height": 100
+                          },
+                          {
+                            "width": 200,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "200_200/B56ZYQ0mrGGoAM-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=UNPbhAGEteFWT-PsrUJGmnRqLlr76jTukAvnP_SzITA",
+                            "expiresAt": 1789603200000,
+                            "height": 200
+                          },
+                          {
+                            "width": 400,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "400_400/B56ZYQ0mrGGoAc-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=VLtcj1EBOJV2LA4_rVYP9zGho3r23V0MTXGH5p2Z7gw",
+                            "expiresAt": 1789603200000,
+                            "height": 400
+                          }
+                        ]
+                      }
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+                    "universalName": "microsoft"
+                  },
+                  "shouldShowSourceOfHireBadge": false,
+                  "locationName": "Greater Seattle Area",
+                  "multiLocaleTitle": {
+                    "en_US": "Chairman and CEO"
+                  },
+                  "geoUrn": "urn:li:fsd_geo:90000091",
+                  "profileTreasuryMediaPosition": {
+                    "paging": {
+                      "total": 0,
+                      "count": 10,
+                      "start": 0,
+                      "links": [],
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+                    "elements": []
+                  },
+                  "geoLocationName": "Greater Seattle Area",
+                  "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition",
+                  "multiLocaleLocationName": {
+                    "en_US": "Greater Seattle Area"
+                  }
+                }
+              ]
+            },
+            "company": {
+              "industry": {
+                "urn:li:fsd_industry:4": {
+                  "name": "Computer Software",
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                  "entityUrn": "urn:li:fsd_industry:4"
+                }
+              },
+              "industryUrns": [
+                "urn:li:fsd_industry:4"
+              ],
+              "url": "https://www.linkedin.com/company/microsoft/",
+              "employeeCountRange": {
+                "start": 10001,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+              },
+              "entityUrn": "urn:li:fsd_company:1035",
+              "name": "Microsoft",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/B56ZYQ0mrGGoAU-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=PZsResnhobUBxhtTu8jfRK-eI1SS-UTKYHpRf-gq4M4",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/B56ZYQ0mrGGoAM-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=UNPbhAGEteFWT-PsrUJGmnRqLlr76jTukAvnP_SzITA",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/B56ZYQ0mrGGoAc-/0/1744038948046/microsoft_logo?e=1789603200&v=beta&t=VLtcj1EBOJV2LA4_rVYP9zGho3r23V0MTXGH5p2Z7gw",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+              "universalName": "microsoft"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup",
+            "companyUrn": "urn:li:fsd_company:1035"
+          },
+          {
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,0707d3d47919fd3c5f179f6ca719e9aa8f13be6b)",
+            "dateRange": {
+              "start": {
+                "year": 2018,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+              "en_US": "University of Chicago"
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "0ff33328-e842-4633-bd20-1b9ba7ac6e99"
+            },
+            "companyName": "University of Chicago",
+            "profilePositionInPositionGroup": {
+              "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup",
+              "elements": [
+                {
+                  "shouldShowSourceOfHireBadge": false,
+                  "multiLocaleTitle": {
+                    "en_US": "Member Board Of Trustees"
+                  },
+                  "dateRange": {
+                    "start": {
+                      "year": 2018,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+                  },
+                  "multiLocaleCompanyName": {
+                    "en_US": "University of Chicago"
+                  },
+                  "$anti_abuse_metadata": {
+                    "$anti_abuse_uuid": "075f2012-4e07-4bc5-9798-8876d727b9bc"
+                  },
+                  "companyName": "University of Chicago",
+                  "title": "Member Board Of Trustees",
+                  "companyUrn": "urn:li:fsd_company:3881",
+                  "profileTreasuryMediaPosition": {
+                    "paging": {
+                      "total": 0,
+                      "count": 10,
+                      "start": 0,
+                      "links": [],
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+                    "elements": []
+                  },
+                  "entityUrn": "urn:li:fsd_profilePosition:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,1441746490)",
+                  "company": {
+                    "industry": {
+                      "urn:li:fsd_industry:68": {
+                        "name": "Higher Education",
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                        "entityUrn": "urn:li:fsd_industry:68"
+                      }
+                    },
+                    "industryUrns": [
+                      "urn:li:fsd_industry:68"
+                    ],
+                    "url": "https://www.linkedin.com/school/uchicago/",
+                    "employeeCountRange": {
+                      "start": 10001,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                    },
+                    "entityUrn": "urn:li:fsd_company:3881",
+                    "name": "University of Chicago",
+                    "logo": {
+                      "vectorImage": {
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                        "rootUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQHbp_dv8CAlpQ/company-logo_",
+                        "artifacts": [
+                          {
+                            "width": 200,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1630577480920/uchicago_logo?e=1789603200&v=beta&t=GJ0unQs_NC0bp5H13TGvwSmt-yiesAMecpu3897a8yY",
+                            "expiresAt": 1789603200000,
+                            "height": 200
+                          },
+                          {
+                            "width": 100,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1630577480920/uchicago_logo?e=1789603200&v=beta&t=A0t_elP11ITh55CYQNfPaHuOr1ySPnFlfydhyeI3tqY",
+                            "expiresAt": 1789603200000,
+                            "height": 100
+                          },
+                          {
+                            "width": 400,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1630577480920/uchicago_logo?e=1789603200&v=beta&t=3lAD0ZRo8pj8rma1zH4x6uiqiPVBr9MbnGrr5FfCAjI",
+                            "expiresAt": 1789603200000,
+                            "height": 400
+                          }
+                        ]
+                      }
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+                    "universalName": "uchicago"
+                  },
+                  "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+                }
+              ]
+            },
+            "company": {
+              "industry": {
+                "urn:li:fsd_industry:68": {
+                  "name": "Higher Education",
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                  "entityUrn": "urn:li:fsd_industry:68"
+                }
+              },
+              "industryUrns": [
+                "urn:li:fsd_industry:68"
+              ],
+              "url": "https://www.linkedin.com/school/uchicago/",
+              "employeeCountRange": {
+                "start": 10001,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+              },
+              "entityUrn": "urn:li:fsd_company:3881",
+              "name": "University of Chicago",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQHbp_dv8CAlpQ/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1630577480920/uchicago_logo?e=1789603200&v=beta&t=GJ0unQs_NC0bp5H13TGvwSmt-yiesAMecpu3897a8yY",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1630577480920/uchicago_logo?e=1789603200&v=beta&t=A0t_elP11ITh55CYQNfPaHuOr1ySPnFlfydhyeI3tqY",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1630577480920/uchicago_logo?e=1789603200&v=beta&t=3lAD0ZRo8pj8rma1zH4x6uiqiPVBr9MbnGrr5FfCAjI",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+              "universalName": "uchicago"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup",
+            "companyUrn": "urn:li:fsd_company:3881"
+          },
+          {
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,bf61a10ffc88b6d3fc1d132e681e26d1781e125f)",
+            "dateRange": {
+              "start": {
+                "year": 2017,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "end": {
+                "year": 2024,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+              "en_US": "Starbucks"
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "eb6524b1-785d-4a2e-afe0-d24c724b8400"
+            },
+            "companyName": "Starbucks",
+            "profilePositionInPositionGroup": {
+              "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup",
+              "elements": [
+                {
+                  "shouldShowSourceOfHireBadge": false,
+                  "multiLocaleTitle": {
+                    "en_US": "Board Member"
+                  },
+                  "dateRange": {
+                    "start": {
+                      "year": 2017,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+                    },
+                    "end": {
+                      "year": 2024,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+                  },
+                  "multiLocaleCompanyName": {
+                    "en_US": "Starbucks"
+                  },
+                  "$anti_abuse_metadata": {
+                    "$anti_abuse_uuid": "f19d03c4-4024-4e3e-8cd2-7d8faee2ce34"
+                  },
+                  "companyName": "Starbucks",
+                  "title": "Board Member",
+                  "companyUrn": "urn:li:fsd_company:2271",
+                  "profileTreasuryMediaPosition": {
+                    "paging": {
+                      "total": 0,
+                      "count": 10,
+                      "start": 0,
+                      "links": [],
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+                    "elements": []
+                  },
+                  "entityUrn": "urn:li:fsd_profilePosition:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,1441745760)",
+                  "company": {
+                    "industry": {
+                      "urn:li:fsd_industry:27": {
+                        "name": "Retail",
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                        "entityUrn": "urn:li:fsd_industry:27"
+                      }
+                    },
+                    "industryUrns": [
+                      "urn:li:fsd_industry:27"
+                    ],
+                    "url": "https://www.linkedin.com/company/starbucks/",
+                    "employeeCountRange": {
+                      "start": 10001,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                    },
+                    "entityUrn": "urn:li:fsd_company:2271",
+                    "name": "Starbucks",
+                    "logo": {
+                      "vectorImage": {
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                        "rootUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQEQxk9y2rk7Hw/company-logo_",
+                        "artifacts": [
+                          {
+                            "width": 200,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1631316692275?e=1789603200&v=beta&t=Ey3Jup0gnMh-DaEBfL9CrUXGjq0UAXpLA-x13NmFVY8",
+                            "expiresAt": 1789603200000,
+                            "height": 200
+                          },
+                          {
+                            "width": 100,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1631316692276?e=1789603200&v=beta&t=92zbFF6FaWFxRQWdiyFW_dndy6V2PNNTpyL4yKRTEs0",
+                            "expiresAt": 1789603200000,
+                            "height": 100
+                          },
+                          {
+                            "width": 400,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1631316692276?e=1789603200&v=beta&t=iMskt2nVCdmoJpOfbbA6t0UyezgTVktW-WF2NzbA5jk",
+                            "expiresAt": 1789603200000,
+                            "height": 400
+                          }
+                        ]
+                      }
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+                    "universalName": "starbucks"
+                  },
+                  "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+                }
+              ]
+            },
+            "company": {
+              "industry": {
+                "urn:li:fsd_industry:27": {
+                  "name": "Retail",
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                  "entityUrn": "urn:li:fsd_industry:27"
+                }
+              },
+              "industryUrns": [
+                "urn:li:fsd_industry:27"
+              ],
+              "url": "https://www.linkedin.com/company/starbucks/",
+              "employeeCountRange": {
+                "start": 10001,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+              },
+              "entityUrn": "urn:li:fsd_company:2271",
+              "name": "Starbucks",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQEQxk9y2rk7Hw/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1631316692275?e=1789603200&v=beta&t=Ey3Jup0gnMh-DaEBfL9CrUXGjq0UAXpLA-x13NmFVY8",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1631316692276?e=1789603200&v=beta&t=92zbFF6FaWFxRQWdiyFW_dndy6V2PNNTpyL4yKRTEs0",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1631316692276?e=1789603200&v=beta&t=iMskt2nVCdmoJpOfbbA6t0UyezgTVktW-WF2NzbA5jk",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+              "universalName": "starbucks"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup",
+            "companyUrn": "urn:li:fsd_company:2271"
+          },
+          {
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,6258d61ee7988e440e5d1f6bacd3e03b6f1ee58f)",
+            "dateRange": {
+              "start": {
+                "year": 2021,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "end": {
+                "year": 2023,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+              "en_US": "The Business Council U.S."
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "bf66d12a-2e5e-45aa-b3fb-7629e4bc0561"
+            },
+            "companyName": "The Business Council U.S.",
+            "profilePositionInPositionGroup": {
+              "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup",
+              "elements": [
+                {
+                  "shouldShowSourceOfHireBadge": false,
+                  "multiLocaleTitle": {
+                    "en_US": "Chairman"
+                  },
+                  "dateRange": {
+                    "start": {
+                      "year": 2021,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+                    },
+                    "end": {
+                      "year": 2023,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+                  },
+                  "multiLocaleCompanyName": {
+                    "en_US": "The Business Council U.S."
+                  },
+                  "$anti_abuse_metadata": {
+                    "$anti_abuse_uuid": "8d0c33d5-cf38-44bd-bdfc-e36b8c1a3bb0"
+                  },
+                  "companyName": "The Business Council U.S.",
+                  "title": "Chairman",
+                  "companyUrn": "urn:li:fsd_company:5301945",
+                  "profileTreasuryMediaPosition": {
+                    "paging": {
+                      "total": 0,
+                      "count": 10,
+                      "start": 0,
+                      "links": [],
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+                    "elements": []
+                  },
+                  "entityUrn": "urn:li:fsd_profilePosition:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,2057886223)",
+                  "company": {
+                    "industry": {
+                      "urn:li:fsd_industry:100": {
+                        "name": "Non-profit Organization Management",
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                        "entityUrn": "urn:li:fsd_industry:100"
+                      }
+                    },
+                    "industryUrns": [
+                      "urn:li:fsd_industry:100"
+                    ],
+                    "url": "https://www.linkedin.com/company/the-business-council-us/",
+                    "employeeCountRange": {
+                      "start": 2,
+                      "end": 10,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                    },
+                    "entityUrn": "urn:li:fsd_company:5301945",
+                    "name": "The Business Council U.S.",
+                    "logo": {
+                      "vectorImage": {
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                        "rootUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQGcnaZNpjMvrw/company-logo_",
+                        "artifacts": [
+                          {
+                            "width": 200,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1630557702704/the_business_council_us_logo?e=1789603200&v=beta&t=GlylyGr-haN0OgEFPNOu8TbGaGADDQGgVkA06-VW0XE",
+                            "expiresAt": 1789603200000,
+                            "height": 200
+                          },
+                          {
+                            "width": 100,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1630557702704/the_business_council_us_logo?e=1789603200&v=beta&t=9cuNeLPveQS1pdw4PpOfqTlBWFuCyPtoXOTzt7_BJms",
+                            "expiresAt": 1789603200000,
+                            "height": 100
+                          },
+                          {
+                            "width": 400,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1630557702704/the_business_council_us_logo?e=1789603200&v=beta&t=Dnc36haIMxinFWN4Ze2-I4GvqkZ7uBF_vkz3yt5wdcE",
+                            "expiresAt": 1789603200000,
+                            "height": 400
+                          }
+                        ]
+                      }
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+                    "universalName": "the-business-council-us"
+                  },
+                  "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+                }
+              ]
+            },
+            "company": {
+              "industry": {
+                "urn:li:fsd_industry:100": {
+                  "name": "Non-profit Organization Management",
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                  "entityUrn": "urn:li:fsd_industry:100"
+                }
+              },
+              "industryUrns": [
+                "urn:li:fsd_industry:100"
+              ],
+              "url": "https://www.linkedin.com/company/the-business-council-us/",
+              "employeeCountRange": {
+                "start": 2,
+                "end": 10,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+              },
+              "entityUrn": "urn:li:fsd_company:5301945",
+              "name": "The Business Council U.S.",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/C4D0BAQGcnaZNpjMvrw/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1630557702704/the_business_council_us_logo?e=1789603200&v=beta&t=GlylyGr-haN0OgEFPNOu8TbGaGADDQGgVkA06-VW0XE",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1630557702704/the_business_council_us_logo?e=1789603200&v=beta&t=9cuNeLPveQS1pdw4PpOfqTlBWFuCyPtoXOTzt7_BJms",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1630557702704/the_business_council_us_logo?e=1789603200&v=beta&t=Dnc36haIMxinFWN4Ze2-I4GvqkZ7uBF_vkz3yt5wdcE",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+              "universalName": "the-business-council-us"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup",
+            "companyUrn": "urn:li:fsd_company:5301945"
+          },
+          {
+            "entityUrn": "urn:li:fsd_profilePositionGroup:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,cebbb588698a8c8395f13a59517797ad7502746b)",
+            "dateRange": {
+              "start": {
+                "year": 2016,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "end": {
+                "year": 2022,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+            },
+            "multiLocaleCompanyName": {
+              "en_US": "Fred Hutch"
+            },
+            "$anti_abuse_metadata": {
+              "$anti_abuse_uuid": "afdb5216-636d-4984-955e-4f1d27c3c237"
+            },
+            "companyName": "Fred Hutch",
+            "profilePositionInPositionGroup": {
+              "paging": {
+                "total": 1,
+                "count": 20,
+                "start": 0,
+                "links": [],
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionsInGroup",
+              "elements": [
+                {
+                  "shouldShowSourceOfHireBadge": false,
+                  "multiLocaleTitle": {
+                    "en_US": "Board Member"
+                  },
+                  "dateRange": {
+                    "start": {
+                      "year": 2016,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+                    },
+                    "end": {
+                      "year": 2022,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.Date"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.common.DateRange"
+                  },
+                  "multiLocaleCompanyName": {
+                    "en_US": "Fred Hutch"
+                  },
+                  "$anti_abuse_metadata": {
+                    "$anti_abuse_uuid": "7a690dec-9012-4385-acc3-2e8ab8558bbd"
+                  },
+                  "companyName": "Fred Hutch",
+                  "title": "Board Member",
+                  "companyUrn": "urn:li:fsd_company:7158",
+                  "profileTreasuryMediaPosition": {
+                    "paging": {
+                      "total": 0,
+                      "count": 10,
+                      "start": 0,
+                      "links": [],
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfileTreasuryMediaItemsInjection",
+                    "elements": []
+                  },
+                  "entityUrn": "urn:li:fsd_profilePosition:(ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,1441743870)",
+                  "company": {
+                    "industry": {
+                      "urn:li:fsd_industry:14": {
+                        "name": "Hospital & Health Care",
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                        "entityUrn": "urn:li:fsd_industry:14"
+                      }
+                    },
+                    "industryUrns": [
+                      "urn:li:fsd_industry:14"
+                    ],
+                    "url": "https://www.linkedin.com/company/fredhutch/",
+                    "employeeCountRange": {
+                      "start": 1001,
+                      "end": 5000,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                    },
+                    "entityUrn": "urn:li:fsd_company:7158",
+                    "name": "Fred Hutch",
+                    "logo": {
+                      "vectorImage": {
+                        "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                        "rootUrl": "https://media.licdn.com/dms/image/v2/D4D0BAQGF4eOou62nvQ/company-logo_",
+                        "artifacts": [
+                          {
+                            "width": 200,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1664795263764/fredhutch_logo?e=1789603200&v=beta&t=xY-ZtsEHVtxT4tgHDEw15jm08p0B98SkmpcZA5HsMOE",
+                            "expiresAt": 1789603200000,
+                            "height": 200
+                          },
+                          {
+                            "width": 100,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1664795263764/fredhutch_logo?e=1789603200&v=beta&t=I23UjBwuM0vGlcPy_FRN-SFc0-gT5DBCX56FeAp4KVs",
+                            "expiresAt": 1789603200000,
+                            "height": 100
+                          },
+                          {
+                            "width": 400,
+                            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                            "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1664795263764/fredhutch_logo?e=1789603200&v=beta&t=UlfuM_rIorMyQw1d615DYNMsBJaRTu6I5pUthfAgWZI",
+                            "expiresAt": 1789603200000,
+                            "height": 400
+                          }
+                        ]
+                      }
+                    },
+                    "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+                    "universalName": "fredhutch"
+                  },
+                  "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePosition"
+                }
+              ]
+            },
+            "company": {
+              "industry": {
+                "urn:li:fsd_industry:14": {
+                  "name": "Hospital & Health Care",
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.Industry",
+                  "entityUrn": "urn:li:fsd_industry:14"
+                }
+              },
+              "industryUrns": [
+                "urn:li:fsd_industry:14"
+              ],
+              "url": "https://www.linkedin.com/company/fredhutch/",
+              "employeeCountRange": {
+                "start": 1001,
+                "end": 5000,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.IntegerRange"
+              },
+              "entityUrn": "urn:li:fsd_company:7158",
+              "name": "Fred Hutch",
+              "logo": {
+                "vectorImage": {
+                  "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+                  "rootUrl": "https://media.licdn.com/dms/image/v2/D4D0BAQGF4eOou62nvQ/company-logo_",
+                  "artifacts": [
+                    {
+                      "width": 200,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "200_200/company-logo_200_200/0/1664795263764/fredhutch_logo?e=1789603200&v=beta&t=xY-ZtsEHVtxT4tgHDEw15jm08p0B98SkmpcZA5HsMOE",
+                      "expiresAt": 1789603200000,
+                      "height": 200
+                    },
+                    {
+                      "width": 100,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "100_100/company-logo_100_100/0/1664795263764/fredhutch_logo?e=1789603200&v=beta&t=I23UjBwuM0vGlcPy_FRN-SFc0-gT5DBCX56FeAp4KVs",
+                      "expiresAt": 1789603200000,
+                      "height": 100
+                    },
+                    {
+                      "width": 400,
+                      "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                      "fileIdentifyingUrlPathSegment": "400_400/company-logo_400_400/0/1664795263764/fredhutch_logo?e=1789603200&v=beta&t=UlfuM_rIorMyQw1d615DYNMsBJaRTu6I5pUthfAgWZI",
+                      "expiresAt": 1789603200000,
+                      "height": 400
+                    }
+                  ]
+                }
+              },
+              "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany",
+              "universalName": "fredhutch"
+            },
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.FullProfilePositionGroup",
+            "companyUrn": "urn:li:fsd_company:7158"
+          }
+        ]
+      },
+      "geoLocation": {
+        "geo": {
+          "countryUrn": "urn:li:fsd_geo:103644278",
+          "country": {
+            "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.CountryGeo",
+            "entityUrn": "urn:li:fsd_geo:103644278",
+            "defaultLocalizedName": "United States"
+          },
+          "defaultLocalizedNameWithoutCountryName": "Redmond, Washington",
+          "entityUrn": "urn:li:fsd_geo:104145663",
+          "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.Geo",
+          "defaultLocalizedName": "Redmond, Washington, United States"
+        },
+        "geoUrn": "urn:li:fsd_geo:104145663",
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.ProfileGeoLocation"
+      },
+      "profileRingStatusCollection": {
+        "paging": {
+          "count": 10,
+          "start": 0,
+          "links": [],
+          "$recipeType": "com.linkedin.voyager.dash.deco.common.FullPaging"
+        },
+        "$recipeType": "com.linkedin.deco.recipe.anonymous.Anon1936086081",
+        "elements": []
+      },
+      "location": {
+        "countryCode": "US",
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.ProfileLocation"
+      },
+      "backgroundPicture": {
+        "$recipeType": "com.linkedin.voyager.dash.deco.identity.profile.ProfilePhotoDecoSpecEditableBackgroundPicture",
+        "displayImageUrn": "urn:li:digitalmediaAsset:D5616AQFVwYcBLAcPqQ",
+        "displayImageReference": {
+          "vectorImage": {
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorImageOnlyRootUrlAndAttribution",
+            "rootUrl": "https://media.licdn.com/dms/image/v2/D5616AQFVwYcBLAcPqQ/profile-displaybackgroundimage-shrink_",
+            "artifacts": [
+              {
+                "width": 800,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "200_800/B56Z6tkWeBKAAQ-/0/1781028448390?e=1789603200&v=beta&t=vcLJ92e41So2uzf6Mw0-MSp_ygG7NCBRPBkk8EMXvTw",
+                "expiresAt": 1789603200000,
+                "height": 200
+              },
+              {
+                "width": 1400,
+                "$recipeType": "com.linkedin.voyager.dash.deco.common.VectorArtifact",
+                "fileIdentifyingUrlPathSegment": "350_1400/B56Z6tkWeBKAAU-/0/1781028448390?e=1789603200&v=beta&t=jSofklEpmbf4atnCbslIzGrGMWYkpDrDRTWiFuzCOj4",
+                "expiresAt": 1789603200000,
+                "height": 350
+              }
+            ]
+          }
+        },
+        "photoFilterEditInfo": {
+          "bottomLeft": {
+            "x": 0,
+            "y": 1.02,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "vignette": 0,
+          "bottomRight": {
+            "x": 1.53,
+            "y": 1.02,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "topRight": {
+            "x": 1.53,
+            "y": 0.51,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "saturation": 0,
+          "brightness": 0,
+          "photoFilterType": "ORIGINAL",
+          "contrast": 0,
+          "topLeft": {
+            "x": 0,
+            "y": 0.51,
+            "$recipeType": "com.linkedin.voyager.dash.deco.common.Coordinate2DFull"
+          },
+          "$recipeType": "com.linkedin.deco.recipe.anonymous.Anon1309211116"
+        }
+      },
+      "primaryLocale": {
+        "country": "US",
+        "language": "en",
+        "$recipeType": "com.linkedin.voyager.dash.deco.common.Locale"
+      }
+    }
+  ],
+  "paging": {
+    "count": 10,
+    "start": 0,
+    "links": []
+  }
+}

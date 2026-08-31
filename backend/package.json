@@ -1,0 +1,35 @@
+{
+  "name": "profilelens-backend",
+  "version": "1.0.0",
+  "description": "ProfileLens \u2014 normalized LinkedIn profile extraction API",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.test.json",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:generate": "prisma generate",
+    "capture:fixture": "tsx scripts/capture-fixture.ts",
+    "check:session": "tsx scripts/check-session.ts",
+    "import:cookie": "tsx scripts/import-cookie.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6",
+    "cors": "^2",
+    "dotenv": "^17",
+    "express": "^5",
+    "zod": "^4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2",
+    "@types/express": "^5",
+    "@types/node": "^22",
+    "prisma": "^6",
+    "tsx": "^4",
+    "typescript": "^5",
+    "vitest": "^3"
+  }
+}

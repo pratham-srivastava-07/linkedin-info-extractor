@@ -1,0 +1,70 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum SessionStatus {
+  ACTIVE
+  EXPIRED
+}
+
+/// Metadata about the upstream session supplied via environment variables.
+///
+/// Deliberately stores NO cookie values. The credentials arrive from env on every
+/// boot, so persisting them here would add a leak surface without buying anything.
+/// `fingerprint` is a SHA-256 over both cookies (li_at + JSESSIONID): enough to
+/// notice the operator rotated either one (which must invalidate the cached
+/// validation), never enough to reconstruct them.
+model Session {
+  id              String        @id @default(cuid())
+  fingerprint     String        @unique
+  status          SessionStatus @default(ACTIVE)
+  memberUrn       String?
+  lastValidatedAt DateTime
+  expiresAt       DateTime
+  lastError       String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@map("sessions")
+}
+
+/// Normalized profiles cached for CACHE_TTL_SECONDS. Keyed by the canonical
+/// profile URL so two spellings of the same profile share one entry.
+model CachedProfile {
+  publicId   String   @id
+  profileUrl String
+  payload    Json
+  fetchedAt  DateTime
+  expiresAt  DateTime
+
+  @@index([expiresAt])
+  @@map("cached_profiles")
+}
+
+enum JobStatus {
+  SUCCEEDED
+  FAILED
+}
+
+/// One row per extraction request — the audit log that makes failures debuggable
+/// after the fact ("fields suddenly all null" in docs/notes.md).
+model ExtractionJob {
+  id           String    @id @default(cuid())
+  profileUrl   String
+  publicId     String
+  status       JobStatus
+  cacheHit     Boolean   @default(false)
+  errorCode    String?
+  errorMessage String?
+  durationMs   Int
+  createdAt    DateTime  @default(now())
+
+  @@index([publicId, createdAt])
+  @@index([status, createdAt])
+  @@map("extraction_jobs")
+}
