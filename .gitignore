@@ -3,8 +3,7 @@ node_modules/
 
 # Secrets — never commit real values. `.env.example` is the tracked template.
 .env
-.env.*
-!.env.example
+
 
 # Build output
 dist/
