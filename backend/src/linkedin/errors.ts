@@ -45,7 +45,7 @@ export class UpstreamGoneError extends Error {
     this.name = "UpstreamGoneError"
   }
 }
-
+ 
 export class UpstreamUnavailableError extends Error {
   constructor(message: string, options?: { cause?: unknown }) {
     super(message, options)

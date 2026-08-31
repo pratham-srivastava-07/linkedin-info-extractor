@@ -10,6 +10,7 @@ import { AppError } from "../src/utils/AppError"
 import { SerialQueue } from "../src/utils/serialQueue"
 import {
   UpstreamAuthError,
+  UpstreamGoneError,
   UpstreamNotFoundError,
   UpstreamRateLimitError,
 } from "../src/linkedin/errors"

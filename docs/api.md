@@ -69,6 +69,22 @@ Fetch and return a normalized profile.
 
 Every field is always present in the response; fields with no data are `null` (or `[]` for list fields) rather than omitted, so consumers can rely on a stable shape.
 
+**Two honest caveats about the list fields.** Neither changes the schema, but both
+change what an empty or short list *means*:
+
+- **`skills` can be a prefix, not the whole list.** Upstream caps the sub-collections
+  it inlines — a profile with 27 skills returns 20 — so a full list is not
+  guaranteed. The response carries no truncation marker.
+- **`languages` has never been observed populated.** Every profile sampled during
+  development listed none, so while the field is mapped and will return values if
+  upstream sends them, `[]` here has not been distinguished in practice from
+  "we are reading the wrong field". Treat a non-empty `languages` as a bonus rather
+  than something to depend on.
+
+More generally, and as already noted for `certifications`: `null`/`[]` means either
+"not present upstream" or "not disclosed by the profile owner", and the API cannot
+tell those apart.
+
 **Error responses**
 
 | Status | Meaning | Example body |
@@ -78,8 +94,16 @@ Every field is always present in the response; fields with no data are `null` (o
 | 404 | Profile not found or private | `{ "error": "profile_not_found" }` |
 | 429 | Rate limited (by us or upstream) | `{ "error": "rate_limited", "retryAfterSeconds": 30 }` |
 | 500 | Unexpected server fault | `{ "error": "internal_error", "message": "Something went wrong. Please try again" }` |
-| 502 | Upstream returned an unexpected shape | `{ "error": "upstream_schema_mismatch" }` |
+| 502 | Upstream returned an unexpected shape, or retired the endpoint | `{ "error": "upstream_schema_mismatch" }` |
 | 503 | Session could not be established | `{ "error": "session_unavailable" }` |
+
+`upstream_schema_mismatch` covers both a changed payload shape and an upstream
+endpoint that has been **retired** (HTTP 410). Both mean the same thing to a
+caller — the service needs a fix before it can serve this request — and neither is
+something a caller can retry into success. It is deliberately *not* reported as
+`503 session_unavailable`: that code means the operator's credentials are dead, and
+conflating the two sends operators re-capturing cookies that were never the
+problem.
 
 `internal_error` is the catch-all: anything that is not one of the failures above
 is scrubbed down to it, so a driver message, a connection string or a stack trace

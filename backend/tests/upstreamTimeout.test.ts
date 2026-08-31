@@ -44,7 +44,7 @@ describe("the abort signal is built from UPSTREAM_TIMEOUT_MS", () => {
         return new Response("{}", { status: 200 })
       }),
     )
-    await client.profileView("jane-doe", cookies)
+    await client.profile("jane-doe", cookies)
     if (!signal) throw new Error("the client sent no abort signal")
     return signal
   }
@@ -109,7 +109,7 @@ describe("a connection that stalls after its headers is still bounded", () => {
     const hung = await fetch(url, { signal: AbortSignal.timeout(300) })
     vi.stubGlobal("fetch", vi.fn<typeof fetch>().mockResolvedValue(hung))
 
-    await expect(client.profileView("jane-doe", cookies)).rejects.toBeInstanceOf(
+    await expect(client.profile("jane-doe", cookies)).rejects.toBeInstanceOf(
       UpstreamUnavailableError,
     )
     vi.unstubAllGlobals()

@@ -101,9 +101,37 @@ JSON response to client
 ### 3. Extraction layer
 - Given valid session cookies and a public profile id, retrieves the raw profile
   data by calling LinkedIn's internal Voyager API over plain HTTPS.
-- `GET /voyager/api/identity/profiles/{publicId}/profileView` returns positions,
-  education, skills, certifications and languages in a single response, so one
-  extraction is one upstream request.
+- The surface is the **dash profiles finder**:
+
+  ```
+  GET /voyager/api/identity/dash/profiles
+        ?q=memberIdentity
+        &memberIdentity={publicId}
+        &decorationId={LINKEDIN_PROFILE_DECORATION_ID}
+  ```
+
+  It is a restli *finder*, so the profile arrives wrapped in `elements` even
+  though exactly one is ever matched: `{ elements: [profile], paging }`.
+- **The decoration is what keeps this to one request.** Without it — or with the
+  top-card decoration the web client uses — the response carries only the header
+  fields, with `experienceCard` / `educationCard` as bare urn references and no
+  summary, skills, certifications or languages at all. With
+  `com.linkedin.voyager.dash.deco.identity.profile.FullProfileWithEntities-93`
+  the same call inlines `summary`, `profilePositionGroups`, `profileEducations`,
+  `profileSkills`, `profileCertifications` and `profileLanguages`. So one
+  extraction remains one upstream request, and the serial queue still sees a
+  single call per job.
+- **The decoration id is configuration, not a constant.** Its version suffix
+  rotates on LinkedIn's schedule exactly the way a GraphQL `queryId` hash does,
+  so it lives in `LINKEDIN_PROFILE_DECORATION_ID` with the observed-good value as
+  its default. When upstream retires one, that is an environment change, not a
+  redeploy.
+- **This is not the endpoint the project was originally built against**, and the
+  difference cost real time. The legacy
+  `GET /identity/profiles/{publicId}/profileView` — and the rest of the
+  `/identity/profiles/*` family — now answers **HTTP 410 Gone**. See
+  `docs/notes.md`; the failure-modes table below records how that is classified
+  now.
 - Three headers carry the session, and the third is the one people get wrong:
   - `cookie:` — either the captured header verbatim, or `li_at=…; JSESSIONID="…"`
     assembled from the fallback pair. JSESSIONID stays **quoted** here.
@@ -119,14 +147,28 @@ JSON response to client
   set**: these values belong to the browser session they were captured with, and a
   stale one is worse than none. Together with the full cookie jar they are the
   working hypothesis for why a two-cookie request gets revoked — request fidelity,
-  not credential age. That hypothesis is **not yet confirmed**; nothing here has
-  been proven to return a `200` from `POST /profile`.
+  not credential age. A full captured header has now served many consecutive
+  requests without being revoked, including a successful extraction, which is
+  consistent with the hypothesis but does not isolate it as the cause.
 - The header set lives in `src/linkedin/headers.ts` and is shared with
   `scripts/check-session.ts`, so the diagnostic and the service put byte-identical
   requests on the wire. That module reads the optional headers from `process.env`
   rather than `config/env`, because the script has to run before `DATABASE_URL`
   exists.
 - Returns raw, unshaped JSON exactly as received.
+- **Status classification is where most of the hard-won knowledge lives**, because
+  three of these codes do not mean what they look like:
+
+  | Upstream | Internal signal | Why |
+  |---|---|---|
+  | 3xx | `UpstreamAuthError` | The login wall. An expired cookie presents as a redirect, not a 401. |
+  | 401 | `UpstreamAuthError` | Genuine rejection. |
+  | 403 **with** `exceptionClass: com.linkedin.voyager.common.VoyagerUserVisibleException` | `UpstreamNotFoundError` | **The finder never 404s.** A private profile, an out-of-network profile and a public id that does not exist all come back as this 403. Reading it as an auth failure would invalidate a healthy session and 503 the whole service because one profile happened to be unreadable. |
+  | 403, any other body | `UpstreamAuthError` | The CSRF/session case — a `csrf-token` that does not match `JSESSIONID`. |
+  | 404 | `UpstreamNotFoundError` | Kept for other paths; the profiles finder does not appear to use it. |
+  | 410 | `UpstreamGoneError` | **A retired endpoint, never a dead session.** Surfaces as `502`, not `503`. |
+  | 429 / 999 | `UpstreamRateLimitError` | 999 is LinkedIn's own anti-automation response. |
+  | `elements: []` | `UpstreamNotFoundError` | A finder that matched nothing is a missing profile. Classified here so the normalizer never has to decide, and the caller gets `404` rather than `502`. |
 
 ### 4. Normalization layer
 - Pure functions, no I/O, no clock, no config. Raw Voyager JSON in, the public
@@ -211,6 +253,10 @@ LINKEDIN_JSESSIONID=     # fallback: paired with LINKEDIN_LI_AT
 LINKEDIN_USER_AGENT=     # optional; defaults to the desktop UA in linkedin/headers.ts
 LINKEDIN_X_LI_TRACK=     # optional; sent only when set
 LINKEDIN_X_LI_PAGE_INSTANCE=  # optional; sent only when set
+LINKEDIN_PROFILE_DECORATION_ID=  # optional; the restli decoration that makes one
+                         # fetch return a whole profile. Its version suffix rotates
+                         # like a GraphQL queryId hash, so it is config, not a
+                         # constant. Defaults to the observed-good value.
 SESSION_TTL_SECONDS=     # how long a validated session is trusted before re-checking
 CACHE_TTL_SECONDS=       # 0 disables profile caching
 UPSTREAM_TIMEOUT_MS=
@@ -246,6 +292,8 @@ database `profilelens`.
 | Session cookie dead / login wall | `503 session_unavailable`; a 302 to the login page counts as an auth failure |
 | Session actively revoked upstream | Same `503` in the service — but `npm run check:session` names it: a `Set-Cookie` deleting `li_at` (`"delete me"`, `Max-Age=0`) is a revocation, not an expiry, and the fix is a fuller capture rather than a fresher cookie |
 | Upstream returns unexpected shape | Normalization throws `SchemaMismatchError`, raw payload logged, client gets a clean `502` |
+| **Upstream retires the endpoint (410)** | `UpstreamGoneError` → `502 upstream_schema_mismatch`, **not** `503`. A retired endpoint is a code/config problem — no credential fixes it — and letting it wear the costume of a dead session is what sent this project chasing cookies for hours. The error message says so explicitly. |
+| Profile private, out of network, or nonexistent | Upstream answers `403` with `VoyagerUserVisibleException`; classified as not-found → `404`, and the session is **not** invalidated |
 | Invalid/malformed URL | `400` before any extraction attempt |
 | Profile private/not found | `404 profile_not_found`, not a generic 500 |
 | Rate limited upstream (429 or 999) | `429 rate_limited` with `retryAfterSeconds` and a `Retry-After` header |

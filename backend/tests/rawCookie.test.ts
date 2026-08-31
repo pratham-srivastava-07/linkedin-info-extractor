@@ -133,14 +133,14 @@ describe("VoyagerClient with a captured header", () => {
     const fetchSpy = vi
       .fn<typeof fetch>()
       .mockResolvedValue(
-        new Response(JSON.stringify({ profile: {} }), {
+        new Response(JSON.stringify({ elements: [{ firstName: "Jane" }] }), {
           status: 200,
           headers: { "content-type": "application/json" },
         }),
       )
     vi.stubGlobal("fetch", fetchSpy)
 
-    await new VoyagerClient().profileView("jane-doe", { raw: RAW })
+    await new VoyagerClient().profile("jane-doe", { raw: RAW })
 
     const [, init] = fetchSpy.mock.calls[0] as [string, RequestInit]
     const headers = init.headers as Record<string, string>

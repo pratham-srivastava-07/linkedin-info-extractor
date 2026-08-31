@@ -41,6 +41,7 @@ npm run dev               # http://localhost:4000
 | `LINKEDIN_USER_AGENT` | no | Overrides the desktop user-agent sent upstream. Defaults to the constant in `src/linkedin/headers.ts`. |
 | `LINKEDIN_X_LI_TRACK` | no | The captured `x-li-track` header (a JSON blob). Sent only when set. |
 | `LINKEDIN_X_LI_PAGE_INSTANCE` | no | The captured `x-li-page-instance` header. Sent only when set. |
+| `LINKEDIN_PROFILE_DECORATION_ID` | no | The restli decoration that makes one fetch return a whole profile. Defaults to `com.linkedin.voyager.dash.deco.identity.profile.FullProfileWithEntities-93`. Its version suffix rotates on LinkedIn's schedule, so this is the first thing to bump if extraction starts failing with a 4xx that is clearly not about the session. |
 
 **"one of"** means exactly that: `src/config/env.ts` refuses to boot unless either
 `LINKEDIN_COOKIE` or the `LINKEDIN_LI_AT` + `LINKEDIN_JSESSIONID` pair is present.
@@ -179,10 +180,10 @@ Every failure returns a documented code, never a stack trace or a partial profil
 |---|---|---|
 | 400 | `{"error":"invalid_url","message":"url must be a valid LinkedIn profile URL"}` | Not a `linkedin.com/in/<id>` URL. Rejected before any network call. |
 | 401 | `{"error":"unauthorized"}` | Missing or wrong `Authorization` header. |
-| 404 | `{"error":"profile_not_found"}` | Profile doesn't exist, or isn't visible to this session. |
+| 404 | `{"error":"profile_not_found"}` | Profile doesn't exist, or isn't visible to this session. Upstream signals both as a `403 VoyagerUserVisibleException`; mapping it here keeps one unreadable profile from invalidating a healthy session. |
 | 429 | `{"error":"rate_limited","retryAfterSeconds":30}` | Upstream rate limit (HTTP 429/999), or too many callers queued. Also sets `Retry-After`. |
 | 500 | `{"error":"internal_error","message":"Something went wrong. Please try again"}` | Catch-all for an unexpected fault. Anything unrecognised is scrubbed down to this, so a driver message or connection string can never reach a response body. |
-| 502 | `{"error":"upstream_schema_mismatch"}` | Upstream changed shape. The raw payload is logged for diffing. |
+| 502 | `{"error":"upstream_schema_mismatch"}` | Upstream changed shape, **or retired the endpoint** (HTTP 410). The raw payload is logged for diffing. Either way it needs a code or config change — not a fresh cookie. |
 | 503 | `{"error":"session_unavailable"}` | Cookies expired/revoked, or LinkedIn was unreachable. |
 
 A response of 500 or above also carries a `stack` field **when `NODE_ENV=development`**.
@@ -269,13 +270,27 @@ POST /profile → validate URL → cache lookup → serial queue → session →
   for a different cookie set. A session is re-verified with one cheap `GET /me` at
   most once per `SESSION_TTL_SECONDS`. If a request fails auth mid-flight it
   retries exactly once with a revalidated session.
-- **Voyager client** issues a single `GET /identity/profiles/{publicId}/profileView`
-  per extraction, carrying the cookie, the derived `csrf-token`, and
+- **Voyager client** issues a single request per extraction:
+
+  ```
+  GET /identity/dash/profiles?q=memberIdentity&memberIdentity={publicId}
+                             &decorationId={LINKEDIN_PROFILE_DECORATION_ID}
+  ```
+
+  carrying the cookie, the derived `csrf-token`, and
   `x-restli-protocol-version: 2.0.0`, plus `x-li-track` / `x-li-page-instance` when
   they are configured. The CSRF token is the `JSESSIONID` value with its quotes
   stripped — read out of the captured header when there is one — while the cookie
   keeps them. That derivation is the most common cause of an unexplained 403, so
   it survives both credential forms and is checked at boot.
+
+  The **decoration** is what keeps this to one round trip: it inlines the summary,
+  positions, education, skills, certifications and languages that the default
+  projection returns only as urn references. Its version suffix rotates like a
+  GraphQL `queryId` hash, which is why it is an environment variable rather than a
+  constant. The legacy `/identity/profiles/{publicId}/profileView` surface this
+  client used to call now returns **HTTP 410 Gone** — see
+  [`../docs/notes.md`](../docs/notes.md).
 - **Serial queue** allows one outbound extraction at a time, so the single session
   never has concurrent requests fired at it. Cache hits skip the queue.
 - **Normalization** is pure functions with no I/O — raw Voyager JSON in, the
@@ -289,24 +304,37 @@ Layering is strict and one-directional:
 
 ---
 
-## ⚠️ First live run — the checklist to work through once real cookies exist
+## Live extraction — what has been observed
 
-**Read this before assuming the service works end to end.** Everything below the
-network boundary is covered by tests and has been exercised against a running
-Postgres. What has **never been executed** is a successful extraction: it needs a
-live, logged-in session. So:
+**A successful extraction has now been run end to end.** On **2026-08-31**, against
+the operator's own profile with a full captured `LINKEDIN_COOKIE`:
 
-- no `200` from `POST /profile` has ever been observed;
-- the normalizer has only ever run against synthetic fixtures, never a real payload;
-- `SESSION_TTL_SECONDS` is still a guess (`docs/notes.md` says so).
+```
+POST /profile  →  200
+X-Cache: MISS          1426 ms
+```
 
-One thing *has* been established by experiment, and it shapes step 1: a session
-carrying only `li_at` + `JSESSIONID` served exactly one real `GET /voyager/api/me`
-(HTTP 200) and was then **actively revoked** minutes later. Start from a full
-capture, not from two hand-copied cookies. `docs/notes.md` has the detail.
+All twelve documented keys present, and the list fields genuinely populated rather
+than silently empty: `experience` 3, `education` 3, `skills` 20,
+`certifications` 11. `languages` came back `[]` because that profile lists none.
+Repeating the identical request:
 
-Nobody has to send their cookies anywhere to fix that. The whole sequence runs on
-the operator's own machine, against their own LinkedIn session.
+```
+POST /profile  →  200
+X-Cache: HIT           23 ms
+```
+
+The cached payload was deep-equal to the extracted one, and no second
+`GET /voyager/api/me` was issued — that is session reuse, success criterion 2 in
+the root `CLAUDE.md`. `GET /health` reported
+`{"status":"ok","database":"connected","session":"valid"}`.
+
+What is still *not* observed: a profile that actually lists **languages**. Every
+profile sampled had `profileLanguages.paging.total === 0`, so that one collection's
+element shape is inferred from its siblings rather than confirmed. It maps
+defensively and returns `[]`.
+
+### Reproducing it
 
 **1. Capture a real request into `backend/.env`.**
 
@@ -317,9 +345,7 @@ DevTools → Network → filter `voyager` → Fetch/XHR → reload → right-cli
 ["Getting your upstream credentials"](#getting-your-upstream-credentials).
 
 `src/config/env.ts` validates on import, so a missing or incomplete credential
-stops the process at boot instead of failing requests later. The two-cookie
-fallback still boots and still works; it is just the shape that got revoked.
-Also set `PORT=4000` while you are in there if it still says 3000.
+stops the process at boot instead of failing requests later.
 
 **2. Start Postgres and the API.**
 
@@ -329,8 +355,8 @@ npx prisma migrate deploy
 npm run dev
 ```
 
-**3. Confirm the session is actually live.** This is the gate — do not go further
-until it passes.
+**3. Confirm the session is live.** This is the gate — do not go further until it
+passes.
 
 ```bash
 npm run check:session        # cheapest check: one GET /me, no server, no database
@@ -338,28 +364,16 @@ curl -s http://localhost:4000/health
 ```
 
 Expect `{"status":"ok","database":"connected","session":"valid"}`. A `503` with
-`"session":"invalid"` means the credential was rejected. Run `check:session` and
-read its verdict before re-copying anything:
+`"session":"invalid"` means the credential was rejected; run `check:session` and
+read its verdict (**REVOKED** / **login wall** / **checkpoint** / **rate limited**)
+before re-copying anything, because those need different fixes.
 
-- **REVOKED** — upstream deleted the cookies (`li_at="delete me"`, `Max-Age=0`).
-  Log in again and take a *full* capture; the request shape is what is being
-  rejected. Do not retry the same two cookies.
-- **INVALID, login wall** — the browser session is logged out. Log in, re-capture.
-- **INVALID, checkpoint** — the account needs attention in a normal browser first.
-- **RATE LIMITED** — stop for a while; retrying is what escalates to a checkpoint.
-
-For a 403 with a credential you believe is good, check the `JSESSIONID` quoting
-note above before assuming the account is blocked.
-
-**4. Extract one real profile and print the response.**
+**4. Extract one real profile.**
 
 ```bash
 API_KEY=$(grep '^API_KEY=' .env | cut -d= -f2- | tr -d '"')
 
-curl -s -D /dev/stderr -X POST http://localhost:4000/profile \
-  -H "Authorization: Bearer $API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"url":"https://www.linkedin.com/in/YOUR-PROFILE-SLUG/"}' | jq .
+curl -s -D /dev/stderr -X POST http://localhost:4000/profile   -H "Authorization: Bearer $API_KEY"   -H "Content-Type: application/json"   -d '{"url":"https://www.linkedin.com/in/YOUR-PROFILE-SLUG/"}' | jq .
 ```
 
 Check, in this order:
@@ -367,79 +381,46 @@ Check, in this order:
 - status is `200` and `X-Cache: MISS` (headers go to stderr via `-D /dev/stderr`);
 - `name` and `headline` are populated — if both were empty the request would have
   been a `502`, so a `200` already proves the top of the mapping;
-- `experience`, `education`, `skills`, `certifications`, `languages` are arrays,
-  and any of them being `[]` on a profile that clearly has entries is the signal
-  that a Voyager field moved.
+- `experience`, `education` and `skills` are non-empty **on a profile that clearly
+  has entries**. Any of them being `[]` there is the signal that a field moved.
 
-**5. Prove the cache and session reuse.** Run the exact same command again.
+**5. Prove the cache and session reuse.** Run the exact same command again and
+expect `X-Cache: HIT`. A second `MISS` means `CACHE_TTL_SECONDS` is `0` or the
+cache write failed — the write is non-fatal by design, so check stdout for
+`[profile_cache] write failed`. Neither request should have logged a second
+`GET /me`.
 
-```
-X-Cache: HIT
-```
-
-A second `MISS` means `CACHE_TTL_SECONDS` is `0` or the cache write failed — the
-write is non-fatal by design, so check stdout for `[profile_cache] write failed`.
-Neither request should have logged a second `GET /me`: that is session reuse, one
-of the stated success criteria.
-
-**6. Capture the raw payload as a fixture.**
+**6. Capture a fixture if you need one.**
 
 ```bash
-npm run capture:fixture -- https://www.linkedin.com/in/YOUR-PROFILE-SLUG/ real-profile
+npm run capture:fixture -- https://www.linkedin.com/in/SOME-PUBLIC-FIGURE/ my-fixture
 ```
 
-This writes `tests/fixtures/real-profile.json` — the raw Voyager response, not the
-normalized output.
+This writes the raw finder response — `{ elements: [profile], paging }` — not the
+normalized output. **Prefer public figures for anything committed**, and never
+commit a capture of a private profile: the payload is a complete profile and
+carries anti-abuse uuids and signed image URLs.
 
-**7. Compare it against the synthetic fixtures.** This is the step that actually
-retires the risk, because the three existing fixtures were written from the
-documented shape rather than from an observed response.
+### If it does not return 200
 
-```bash
-# Which top-level Voyager views exist, and do the synthetic ones assume any that don't?
-jq -r 'keys[]' tests/fixtures/real-profile.json
-jq -r 'keys[]' tests/fixtures/full-profile.json
+The one distinction worth internalising, because getting it backwards is what cost
+this project the most time:
 
-# The exact keys the normalizer reads off `profile`
-jq -r '.profile | keys[]' tests/fixtures/real-profile.json
-```
+| Response | Meaning | Fix |
+|---|---|---|
+| `502 upstream_schema_mismatch` | Upstream moved: the payload shape changed, **or the endpoint was retired** (HTTP 410). | Bump `LINKEDIN_PROFILE_DECORATION_ID`, or capture a fresh fixture and diff it. **Not a cookie problem** — the log line for the request id will say so. |
+| `503 session_unavailable` | *Now* it really is the credential. | `npm run check:session`, then re-capture. |
+| `404 profile_not_found` | The profile is private, out of network, or does not exist. Upstream signals this as a `403 VoyagerUserVisibleException`, which the client deliberately maps to 404 so that one unreadable profile cannot invalidate a healthy session. | Try a profile the session can see. |
+| `429 rate_limited` | HTTP 429 or 999 upstream. | **Stop.** Retrying is what escalates to an account checkpoint. |
 
-Compare against what `src/normalization/normalizeProfile.ts` reads:
-
-| Expected in the payload | Feeds |
-|---|---|
-| `profile.firstName`, `profile.lastName` | `name` |
-| `profile.headline` | `headline` |
-| `profile.locationName` → `geoLocationName` → `geoCountryName` | `location` |
-| `profile.summary` | `about` |
-| `positionView.elements[]` — `title`, `companyName`, `timePeriod`, `description` | `experience` |
-| `educationView.elements[]` — `schoolName`, `degreeName`, `fieldOfStudy`, `timePeriod` | `education` |
-| `skillView.elements[].name` | `skills` |
-| `certificationView.elements[]` — `name`, `authority`/`company.name` | `certifications` |
-| `languageView.elements[].name` | `languages` |
-| `profile.miniProfile.picture["com.linkedin.common.VectorImage"]` | `profileImageUrl` |
-
-Anything on the left that is **missing or renamed** in `real-profile.json` is a
-mapping bug to fix now, while you have a live session to test against — not after
-it surfaces as nulls in production. If the real shape differs, fix
-`normalizeProfile.ts`, add `real-profile.json` to `tests/normalization.test.ts`
-alongside the synthetic fixtures, and keep both: the synthetic ones cover sparse
-and edge cases the one real profile will not.
-
-**8. Delete or scrub the fixture before committing** if the profile is not yours
-and not public — it is a full raw payload, and `tests/fixtures/` is checked in.
-
-Once step 4 has returned a `200`, that fact can be recorded in `docs/notes.md`.
-Until then no document in this repo claims live extraction has been proven, and
-none should be edited to say otherwise.
-
----
+The full endpoint archaeology — what returns 410, what replaced it, and the exact
+shapes — is in [`../docs/notes.md`](../docs/notes.md).
 
 ## Development
 
 ```bash
 npm run dev            # watch mode
-npm test               # unit tests — 182 across 12 files
+npm test               # unit tests — 194 across 12 files
 npm run typecheck      # tsc over src/, then over tests/ and scripts/ too
 npm run build          # compile to dist/
 npm start              # run the build
@@ -461,9 +442,28 @@ first thing to break when upstream changes. Tests run against saved fixtures in
 npm run capture:fixture -- https://www.linkedin.com/in/example-profile/ my-fixture
 ```
 
-saves a real raw payload you can assert against. When profiles start coming back
-with null fields, capture a fresh one and diff it against the last known good
-fixture to find what moved.
+saves a real raw payload you can assert against — the whole finder response,
+`{ elements: [profile], paging }`. When profiles start coming back with null
+fields, capture a fresh one and diff it against the last known good fixture to
+find what moved.
+
+The three committed fixtures are **real captures of public figures**, chosen to
+cover different shapes: one fully filled out (skills, a certification, a degree
+with a field of study), one genuinely sparse (`paging.total === 0` across several
+collections), and one edge case (five position groups, plus an education entry
+with no `schoolName` at all). Shapes none of them happens to carry — a position
+`description`, whitespace-only strings, a group with no nested positions — are
+covered by objects trimmed by hand from real captures, labelled as such in
+`tests/normalization.test.ts`.
+
+Two things to know before adding one:
+
+- **Never commit a capture of a private profile**, or of your own. These payloads
+  are complete profiles and carry anti-abuse uuids and signed image URLs.
+- `vitest.config.ts` pins `LINKEDIN_COOKIE: ""` on purpose. `config/env.ts` calls
+  `dotenv.config()`, which fills in anything vitest has not set — so without that
+  line the suite behaves differently depending on whether the developer happens to
+  have a real cookie in `.env`, and the live value shows up in assertion diffs.
 
 ## Deployment
 
